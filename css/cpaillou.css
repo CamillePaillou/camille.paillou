@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+.cp {
+    font-family: "Jura", sans-serif;
+    font-weight: 800;
+    font-size: 185px; 
+    justify-content: center;
+    margin:0; 
+}
+
+hr.solid {
+    border-top: 3px solid black;
+  }
+
+.bio {
+    font-family: "Jura", sans-serif;
+    margin-left:50px; 
+    font-size:80px; 
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50% 20%;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 1em; 
+    align-items: start;
+}
+
+.tags-column {
+    position: relative;
+    top: 200px;
+    margin-left : 50px; 
+}
+
+.tag1, .tag2 {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    position: absolute; /* Important pour un positionnement précis */
+    transform: rotate(-80deg);
+}
+
+.tag1 {
+    background: black;
+    color: white;
+    left: 20px; /* Ajuste la distance depuis le bord gauche */
+    top: 20px; /* Ajuste la hauteur */
+
+}
+
+.tag2 {
+    background: white;
+    color: black;
+    border:1px solid black; 
+    left: 50px; /* Décalage plus grand pour éviter le chevauchement */
+    top: 100px; /* Augmente pour éloigner du premier */
+}
