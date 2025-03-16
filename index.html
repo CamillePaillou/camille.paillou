@@ -10,7 +10,9 @@
 <body>
 
     <header>
-        <h1 class="cp">CAMILLE PAILLOU</h1>
+        <h1 class="cp">
+            <a href="index.html">CAMILLE PAILLOU</a> 
+        </h1>
         <hr class="solid">
     </header>
 
@@ -28,11 +30,32 @@
             </p>
         </div>
         <div class="tags-column">
-            <div class="tag1">développement web</div>
-            <div class="tag2">pratique artistique</div>
+            <a href="dev.html" class="tag tag1">développement web</a>
+            <a href="art.html" class="tag tag2">pratique artistique</a>
         </div>
     </div>
 
+    <div>
+        <hr class="hr-contact">
+        <h2 class="contact">contact</h2>
+        <form class="contact-form">
+            <label for="name">Votre nom</label>
+            <textarea id="name" name="name" rows="1" placeholder="Entrez votre nom..."></textarea>
+        
+            <label for="email">Votre email</label>
+            <textarea id="email" name="email" rows="1" placeholder="Entrez votre email..."></textarea>
+        
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+        
+            <button type="submit">Envoyer</button>
+          </form>
+    </div>
+
+
+    <footer> 
+        <p>© Copyright Camille Paillou - 2025 </p>
+    </footer>
 
 </body>
 </html>
