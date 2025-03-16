@@ -159,14 +159,32 @@ hr.solid {
     color: black; 
  }
 
-
-.dev  {
+ .menu {
     display: flex;
+    justify-content: flex-end;
+ }
+
+ .menu > div {
     justify-content:start;
     align-items: center;
+    
+    
+    border: 1px solid black; 
+    font-family: "Jura", sans-serif;
+    padding:20px; 
+    margin-right :20px; 
+    border-radius: 20px;
+ }
+
+.menu a {
     text-decoration: none; 
     color:black; 
-    padding: 20px; 
-    margin-left :20px; 
 }
  
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.spp img {
+    width:800px; 
+}
