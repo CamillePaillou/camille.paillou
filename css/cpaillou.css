@@ -9,14 +9,34 @@ p {
     font-family: "Jura", sans-serif;
     font-weight: 800;
     font-size: 100px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
     margin-top:0px; 
-    letter-spacing: 45px; 
     text-decoration: none; 
     color: black; 
 }
+
+
+.cp a {
+    letter-spacing: 45px;
+}
+
+.titre-dev a {
+    letter-spacing: 25px;
+    font-family: "Jura", sans-serif;
+    font-weight: 800;
+    font-size: 100px; 
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top:0px; 
+    text-decoration: none; 
+    color: black; 
+}
+
 
 hr.solid {
     border-top: 3px solid black;
@@ -86,6 +106,17 @@ hr.solid {
     border: none;
 }
 
+@keyframes borderPulse {
+    0% { border-width: 2px; }
+    50% { border-width: 8px; }
+    100% { border-width: 2px; }
+}
+
+.pulsing-border {
+    border: 2px solid black;
+    animation: borderPulse 1.5s ease-in-out infinite;
+}
+
 
 .hr-contact {
     border-top: 2px solid black;
@@ -146,19 +177,6 @@ hr.solid {
     margin-top: 50px; 
   }
 
- .titre-dev a {
-    font-family: "Jura", sans-serif;
-    font-weight: 800;
-    font-size: 100px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:0px; 
-    letter-spacing: 25px; 
-    text-decoration: none; 
-    color: black; 
- }
-
  .menu {
     display: flex;
     justify-content: flex-end;
@@ -167,8 +185,6 @@ hr.solid {
  .menu > div {
     justify-content:start;
     align-items: center;
-    
-    
     border: 1px solid black; 
     font-family: "Jura", sans-serif;
     padding:20px; 
@@ -178,13 +194,114 @@ hr.solid {
 
 .menu a {
     text-decoration: none; 
-    color:black; 
+    color:black;
+    transition: color 0.3s; 
 }
- 
-.menu a:hover {
-    text-decoration: underline;
+.menu > div:hover {
+    background: black;
 }
 
-.spp img {
-    width:800px; 
+.menu > div:hover a {
+    color: white;
+}
+
+
+
+
+
+.hero {
+    display: none; /* Cache toutes les sections */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    margin-left:1%; 
+}
+
+.hero.active {
+    display: block; /* Seule l'image active est visible */
+}
+
+.overlay-text a {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; 
+    font-family: "Jura", sans-serif;
+    text-decoration: none;
+}
+
+
+.overlay-para {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1; 
+    font-family: "Jura", sans-serif;
+}
+
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: mintcream;
+    margin-top:10px; 
+}
+
+.timeline-item {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.timeline-item img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.caption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-top: 5px;
+    transition: transform 0.5s ease-in-out, background 0.3s;
+}
+
+.circle {
+    background: black;
+    border-radius: 50%;
+}
+
+.star {
+    font-size: 20px;
+    color: gold;
+    background: white;
+    content: "★";
+    transform: scale(1.3);
 }

@@ -6,13 +6,13 @@
     <title>Camille Paillou </title>
     <link rel="stylesheet" href=".//css/cpaillou.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
+    <script src="js/typing2.js" defer></script>
+    <script src="js/timeline.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1 class="titre-dev">
-            <a href="dev.html">DEVELOPPEMENT WEB</a>
-        </h1>
+        <h1 class="titre-dev"><a href="dev.html" id="title2"></a></h1>
         <hr class="solid">
     </header>
 
@@ -21,13 +21,44 @@
         <div><a href="art.html" class="art">pratique artistique</a></div>
     </div>
 
-    <div>
-        <img src="images/spp.png"class="spp">
-    </div>
 
-    <div class="chapitre">
-
+    <div class="hero" data-id="1">
+        <h1 class="overlay-text"><a href="dev/hana.html">HANA MARTINELLI</a></h1>
+        <p class="overlay-para">Site vitrine pour une sculptrice</p>
+        <img src="images/hanam.png" alt="Image de fond">
     </div>
+    
+    <div class="hero" data-id="2">
+        <h1 class="overlay-text"><a href="dev/spp.html">SON PAPIER PIXEL</a></h1>
+        <img src="images/spp.png" alt="Image de fond">
+    </div>
+    
+    <div class="hero" data-id="3">
+        <h1 class="overlay-text"><a href="dev/bap.html">BAP.PERF</a></h1>
+        <img src="images/baperf.png" alt="Image de fond">
+    </div>
+    
+    
+    
+    <div class="timeline">
+        <div class="timeline-item" onclick="selectItem(this)">
+            <img src="images/hanam.png" alt="Image 1">
+            <p class="caption">Hana Martinelli</p>
+            <div class="icon circle"></div>
+        </div>
+        <div class="timeline-item" onclick="selectItem(this)">
+            <img src="images/spp.png" alt="Image 2">
+            <p class="caption">Son Papier Pixel</p>
+            <div class="icon circle"></div>
+        </div>
+        <div class="timeline-item" onclick="selectItem(this)">
+            <img src="images/baperf.png" alt="Image 3">
+            <p class="caption">Bap.perf</p>
+            <div class="icon circle"></div>
+        </div>
+    </div>
+    
+    
 
     <footer> 
         <p>© Copyright Camille Paillou - 2025 </p>
