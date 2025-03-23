@@ -17,7 +17,6 @@ body {
     color: black; 
 }
 
-
 .cp a {
     letter-spacing: 45px;
 }
@@ -36,6 +35,9 @@ body {
     color: black; 
 }
 
+.titre-dev a:hover {
+    color: lavender; 
+}
 
 hr.solid {
     border-top: 3px solid black;
@@ -59,9 +61,32 @@ hr.solid {
 
 .texte-bio {
     font-family: "Jura", sans-serif;
+    font-size:15px; 
     margin-left: 55px; 
     margin-top: -70px; 
+    text-align: justify;
 }
+.texte-bio a{
+    text-decoration: none;  
+    color: grey; 
+}
+.texte-bio a:hover{ 
+    font-weight: bold;
+}
+
+.textes-bio {
+    text-align: justify;
+    font-size:15px; 
+}
+
+.textes-bio  a{
+    text-decoration: none;  
+    color: grey; 
+}
+.texte-bio a:hover{ 
+    font-weight: bold;
+}
+
 .tags-column {
     position: relative;
     top: 140px;
@@ -87,7 +112,7 @@ hr.solid {
     background: white;
     color:black;
     border: 1px solid black;
-    top: 30px;
+    top: 40px;
 }
 
 .tag2 {
@@ -119,7 +144,7 @@ hr.solid {
 
 .hr-contact {
     border-top: 2px solid black;
-    margin-top: 250px; 
+    margin-top: 60px; 
 }
 .contact {
     font-family: "Jura", sans-serif;
@@ -242,16 +267,21 @@ hr.solid {
     font-family: "Jura", sans-serif;
     text-decoration: none;
 }
-
+.overlay-text a:hover {
+    color:lavender; 
+    background-color: white;
+    border-radius:20px; 
+    padding:20px; 
+    border: 2px solid black; 
+}
 
 .overlay-para {
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 15%;
     color: black;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     z-index: 1; 
     font-family: "Jura", sans-serif;
 }
@@ -263,7 +293,7 @@ hr.solid {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: mintcream;
+    background-color: lavender;
     margin-top:10px; 
 }
 
@@ -306,12 +336,19 @@ hr.solid {
 }
 
 /*page details dev */ 
-.titre {
+.titre a {
     margin-top:20px; 
     font-size: 40px; 
     justify-content: center;
     display: flex;
+    text-decoration: none;
+    color: black; 
 }
+.titre a:hover {
+    color:lavender; 
+}
+
+
 .colonne-dev {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -323,6 +360,25 @@ hr.solid {
 }
 
 .dev-p {
-    font-size:18px; 
+    font-size:14px; 
     margin: 30px 50px 10px 10px; 
+    text-align: justify;
+}
+
+.dev-p a{
+    text-decoration:none; 
+    font-style: italic;
+    color: grey; 
+}
+
+.flecheprev a{
+    text-decoration: none; 
+    color: black; 
+    width: 50px; 
+}
+
+.flechesuiv a {
+    text-decoration: none; 
+    color: black; 
+    width: 50px; 
 }
