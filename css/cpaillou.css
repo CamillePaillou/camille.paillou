@@ -2,8 +2,13 @@
 
 body {
     font-family: "Jura", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
+/*PAGE ACCUEIL*/ 
 .cp a{
     font-family: "Jura", sans-serif;
     font-weight: 800;
@@ -21,24 +26,6 @@ body {
     letter-spacing: 45px;
 }
 
-.titre-dev a {
-    letter-spacing: 25px;
-    font-family: "Jura", sans-serif;
-    font-weight: 800;
-    font-size: 100px; 
-    display: inline-block; /* Permet d'écrire de gauche à droite */
-    text-align: left; /* Alignement à gauche */
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top:0px; 
-    text-decoration: none; 
-    color: black; 
-}
-
-.titre-dev a:hover {
-    color: lavender; 
-}
-
 hr.solid {
     border-top: 3px solid black;
   }
@@ -49,8 +36,7 @@ hr.solid {
     font-size:80px; 
 }
 
-
-.container {
+.bio-container {
     display: grid;
     grid-template-columns: 50% 50% 20%;
     gap: 50px;
@@ -59,34 +45,28 @@ hr.solid {
     align-items: start;
 }
 
-.texte-bio {
+.bio-left {
     font-family: "Jura", sans-serif;
     font-size:15px; 
     margin-left: 55px; 
     margin-top: -70px; 
     text-align: justify;
 }
-.texte-bio a{
+.bio-left a , .bio-right a {
     text-decoration: none;  
     color: grey; 
 }
-.texte-bio a:hover{ 
+.bio-left a:hover, .bio-right a:hover { 
     font-weight: bold;
 }
 
-.textes-bio {
+.bio-left {
     text-align: justify;
     font-size:15px; 
 }
 
-.textes-bio  a{
-    text-decoration: none;  
-    color: grey; 
-}
-.texte-bio a:hover{ 
-    font-weight: bold;
-}
 
+/*tags lien */
 .tags-column {
     position: relative;
     top: 140px;
@@ -141,7 +121,7 @@ hr.solid {
     animation: borderPulse 1.5s ease-in-out infinite;
 }
 
-
+/*CONTACT*/ 
 .hr-contact {
     border-top: 2px solid black;
     margin-top: 60px; 
@@ -151,7 +131,6 @@ hr.solid {
     margin-left: 55px; 
     font-size:80px; 
 }
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -159,15 +138,13 @@ hr.solid {
     width: 100%;
     max-width: 800px;
     margin:auto; 
-  }
-
-  .contact-form label {
+}
+.contact-form label {
     font-size: 1.2em;
     color: #333;
     font-family: "Jura", sans-serif;
-  }
-
-  .contact-form textarea {
+}
+.contact-form textarea {
     height: 100px;
     font-family: inherit;
     padding: 10px;
@@ -175,9 +152,8 @@ hr.solid {
     border: 2px solid black;
     resize: none;
     font-family: "Jura", sans-serif;
-  }
-
-  .contact-form button {
+}
+.contact-form button {
     padding: 10px 30px 10px 30px;
     font-size: 1.2em;
     font-weight: bold;
@@ -189,24 +165,19 @@ hr.solid {
     transition: background 0.3s ease;
     margin: auto; 
     font-family: "Jura", sans-serif;
-  }
-
-  .contact-form button:hover {
+}
+.contact-form button:hover {
     background-color: white;
     color: black; 
     border: 2px solid black; 
-  }
+}
 
-  footer {
-    margin-top: 50px; 
-  }
-
- .menu {
+/*MENU*/ 
+.menu {
     display: flex;
     justify-content: flex-end;
- }
-
- .menu > div {
+}
+.menu > div {
     justify-content:start;
     align-items: center;
     border: 1px solid black; 
@@ -214,8 +185,7 @@ hr.solid {
     padding:20px; 
     margin-right :20px; 
     border-radius: 20px;
- }
-
+}
 .menu a {
     text-decoration: none; 
     color:black;
@@ -230,9 +200,24 @@ hr.solid {
 }
 
 
+/*Page DEVELOPPEMENT WEB */ 
+.titre-dev a {
+    letter-spacing: 25px;
+    font-family: "Jura", sans-serif;
+    font-weight: 800;
+    font-size: 100px; 
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top:0px; 
+    text-decoration: none; 
+    color: black; 
+}
 
-
-
+.titre-dev a:hover {
+    color: lavender; 
+}
 .hero {
     display: none; /* Cache toutes les sections */
     position: relative;
@@ -295,6 +280,7 @@ hr.solid {
     padding: 20px;
     background-color: lavender;
     margin-top:10px; 
+    overflow-x: auto;
 }
 
 .timeline-item {
@@ -320,6 +306,18 @@ hr.solid {
     margin: auto;
     margin-top: 5px;
     transition: transform 0.5s ease-in-out, background 0.3s;
+    position: relative;
+    animation: moveIcon 2s infinite alternate;
+}
+
+/* Animation de déplacement */
+@keyframes moveIcon {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 .circle {
@@ -335,19 +333,60 @@ hr.solid {
     transform: scale(1.3);
 }
 
-/*page details dev */ 
-.titre a {
-    margin-top:20px; 
-    font-size: 40px; 
-    justify-content: center;
+
+
+/* Conteneur du titre avec flèches */
+.titre-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Style des flèches */
+.flecheprev, .flechesuiv {
+    font-size: 40px; /* Agrandit les flèches */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none; 
+    color: black; 
+}
+.flecheprev {
+    left: 30px; 
+}
+.flechesuiv {
+    right:80px; 
+}
+.flecheprev a, .flechesuiv a {
+    text-decoration: none; 
+    color: black; 
+}
+.flecheprev a:hover, .flechesuiv a:hover {
+    text-decoration: none; 
+    color: lavender; 
+}
+
+
+/* Centrer le titre */
+.titre {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
     text-decoration: none;
     color: black; 
 }
+.titre a {
+    text-decoration: none;
+    color: black; 
+}
+
 .titre a:hover {
     color:lavender; 
 }
-
 
 .colonne-dev {
     display: grid;
@@ -371,14 +410,8 @@ hr.solid {
     color: grey; 
 }
 
-.flecheprev a{
-    text-decoration: none; 
-    color: black; 
-    width: 50px; 
-}
 
-.flechesuiv a {
-    text-decoration: none; 
-    color: black; 
-    width: 50px; 
-}
+/*FOOTER*/ 
+footer {
+    margin-top: 50px; 
+  }
