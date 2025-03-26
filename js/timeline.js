@@ -1,23 +1,30 @@
 function selectItem(element) {
-    // Supprime l'étoile des autres items
-    document.querySelectorAll(".timeline-item .icon").forEach(icon => {
-        icon.classList.remove("star");
-        icon.classList.add("circle");
-    });
+    let items = document.querySelectorAll(".timeline-item");
+    let icon = document.getElementById("timeline-icon");
 
-    // Applique l'effet à l'élément sélectionné
-    let icon = element.querySelector(".icon");
-    icon.classList.remove("circle");
-    icon.classList.add("star");
+    let index = Array.from(items).indexOf(element);
+    if (index !== -1) {
+        let selectedItem = items[index];
+
+        let itemRect = selectedItem.getBoundingClientRect();
+        let timelineRect = document.querySelector(".timeline").getBoundingClientRect();
+        
+        let iconLeft = itemRect.left - timelineRect.left + itemRect.width / 2;
+
+        // Appliquer animation
+        icon.style.left = `${iconLeft}px`;
+        icon.classList.add("move-animation");
+    }
 }
 
-// Définir l'image 1 comme sélectionnée au chargement
+// Sélectionner le premier élément l'image 1 par défaut au chargement
 document.addEventListener("DOMContentLoaded", function () {
     let firstItem = document.querySelector(".timeline-item");
     if (firstItem) {
         selectItem(firstItem);
     }
 });
+
 
 //function pour le changement d'image et titre 
 function showImage(id) {
@@ -45,4 +52,5 @@ document.querySelectorAll(".timeline-item").forEach((item, index) => {
         selectItem(this); // Met à jour l'étoile
     });
 });
+
 
