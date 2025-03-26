@@ -414,6 +414,25 @@ hr.solid {
 .menu-art > div:hover a {
     color: white;
 
+/*galerie photo*/ 
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    perspective: 1000px;
+}
+.gallery-item {
+    margin: 0 10px;
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
 
 
 /*FOOTER*/ 
