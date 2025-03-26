@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie 3D Magnétique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <!-- Les images seront ajoutées ici -->
+    </div>
+    <div class="preview">
+        <button class="close-preview">Fermer</button>
+        <div class="preview-content">
+            <!-- Le contenu détaillé sera affiché ici -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    perspective: 1000px;
+}
+
+.gallery-item {
+    margin: 0 10px;
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-content {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.close-preview {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery');
+    const preview = document.querySelector('.preview');
+    const previewContent = document.querySelector('.preview-content');
+    const closePreview = document.querySelector('.close-preview');
+
+    // Exemple d'images et de contenu
+    const images = [
+        { src: 'image1.jpg', content: '<h2>Image 1</h2><p>Description de l\'image 1.</p>' },
+        { src: 'image2.jpg', content: '<h2>Image 2</h2><p>Description de l\'image 2.</p>' },
+        // Ajoutez autant d'images que nécessaire
+    ];
+
+    images.forEach((img, index) => {
+        const item = document.createElement('div');
+        item.classList.add('gallery-item');
+        item.style.backgroundImage = `url(${img.src})`;
+        item.dataset.content = img.content;
+        gallery.appendChild(item);
+
+        item.addEventListener('click', function() {
+            previewContent.innerHTML = this.dataset.content;
+            preview.style.display = 'flex';
+        });
+    });
+
+    closePreview.addEventListener('click', function() {
+        preview.style.display = 'none';
+    });
+});

@@ -371,6 +371,49 @@ hr.solid {
     color: grey; 
 }
 
+/*page PRATIQUE ARTISTIQUE*/ 
+.titre-art a {
+    letter-spacing: 25px;
+    font-family: "Jura", sans-serif;
+    font-weight: 800;
+    font-size: 100px; 
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top:0px; 
+    text-decoration: none; 
+    color: black; 
+}
+.titre-art a:hover {
+    color: lavender; 
+}
+.menu-art {
+    font-size:15px; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-art > div {
+    justify-content:start;
+    align-items: center;
+    border: 1px dotted black; 
+    font-family: "Jura", sans-serif;
+    padding:10px; 
+    margin-right :20px; 
+}
+.menu-art a {
+    text-decoration: none; 
+    color:black;
+    transition: color 0.3s; 
+}
+.menu-art > div:hover {
+    background: black;
+}
+
+.menu-art > div:hover a {
+    color: white;
+
 
 
 /*FOOTER*/ 
