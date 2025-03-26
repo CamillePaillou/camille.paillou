@@ -30,16 +30,15 @@ hr.solid {
     border-top: 3px solid black;
   }
 
+
 .bio {
     font-family: "Jura", sans-serif;
     margin-left:50px; 
     font-size:80px; 
 }
-
 .bio-container {
     display: grid;
-    grid-template-columns: 50% 50% 20%;
-    gap: 50px;
+    grid-template-columns: 50% 50% 30%;
     max-width: 1000px;
     margin: 1em; 
     align-items: start;
@@ -48,8 +47,7 @@ hr.solid {
 .bio-left {
     font-family: "Jura", sans-serif;
     font-size:15px; 
-    margin-left: 55px; 
-    margin-top: -70px; 
+    margin: -70px 55px 0px 55px; 
     text-align: justify;
 }
 .bio-left a , .bio-right a {
@@ -71,7 +69,6 @@ hr.solid {
     position: relative;
     top: 140px;
 }
-
 .tag {
     width: 400px;
     height: 100px;
@@ -87,14 +84,12 @@ hr.solid {
     transform: rotate(-80deg);
     font-family: "Jura", sans-serif;
 }
-
 .tag1 {
     background: white;
     color:black;
     border: 1px solid black;
     top: 40px;
 }
-
 .tag2 {
     background: white;
     color: black;
@@ -102,20 +97,17 @@ hr.solid {
     left: 90px;
     top: 100px;
 }
-
 /* Effet au survol */
 .tag:hover {
     background: black;
     color: white;
     border: none;
 }
-
 @keyframes borderPulse {
     0% { border-width: 2px; }
     50% { border-width: 8px; }
     100% { border-width: 2px; }
 }
-
 .pulsing-border {
     border: 2px solid black;
     animation: borderPulse 1.5s ease-in-out infinite;
@@ -124,7 +116,7 @@ hr.solid {
 /*CONTACT*/ 
 .hr-contact {
     border-top: 2px solid black;
-    margin-top: 60px; 
+    margin-top: 50px; 
 }
 .contact {
     font-family: "Jura", sans-serif;
@@ -214,7 +206,6 @@ hr.solid {
     text-decoration: none; 
     color: black; 
 }
-
 .titre-dev a:hover {
     color: lavender; 
 }
@@ -226,7 +217,6 @@ hr.solid {
     overflow: hidden;
     margin-top: 20px; 
 }
-
 .hero img {
     width: 100%;
     height: 100%;
@@ -234,11 +224,9 @@ hr.solid {
     opacity: 0.4;
     margin-left:1%; 
 }
-
 .hero.active {
     display: block; /* Seule l'image active est visible */
 }
-
 .overlay-text a {
     position: absolute;
     top: 40%;
@@ -259,7 +247,6 @@ hr.solid {
     padding:20px; 
     border: 2px solid black; 
 }
-
 .overlay-para {
     position: absolute;
     top: 50%;
@@ -270,8 +257,6 @@ hr.solid {
     z-index: 1; 
     font-family: "Jura", sans-serif;
 }
-
-
 .timeline {
     display: flex;
     justify-content: space-between;
@@ -282,24 +267,20 @@ hr.solid {
     margin-top:10px; 
     overflow-x: auto;
 }
-
 .timeline-item {
     text-align: center;
     position: relative;
     cursor: pointer;
 }
-
 .timeline-item img {
     width: 150px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
-
 .caption {
     margin-top: 10px;
     font-weight: bold;
 }
-
 .icon {
     width: 20px;
     height: 20px;
@@ -309,7 +290,6 @@ hr.solid {
     position: relative;
     animation: moveIcon 2s infinite alternate;
 }
-
 /* Animation de déplacement */
 @keyframes moveIcon {
     from {
@@ -319,12 +299,10 @@ hr.solid {
         transform: translateY(-10px);
     }
 }
-
 .circle {
     background: black;
     border-radius: 50%;
 }
-
 .star {
     font-size: 20px;
     color: gold;
@@ -333,10 +311,9 @@ hr.solid {
     transform: scale(1.3);
 }
 
-
-
+/*Page Détail présentation site */ 
 /* Conteneur du titre avec flèches */
-.titre-container {
+.dev-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,9 +321,7 @@ hr.solid {
     position: relative;
     padding: 10px 20px;
 }
-
-/* Style des flèches */
-.flecheprev, .flechesuiv {
+.flecheprev-dev, .flechesuiv-dev {
     font-size: 40px; /* Agrandit les flèches */
     position: absolute;
     top: 50%;
@@ -354,24 +329,21 @@ hr.solid {
     text-decoration: none; 
     color: black; 
 }
-.flecheprev {
+.flecheprev-dev {
     left: 30px; 
 }
-.flechesuiv {
+.flechesuiv-dev  {
     right:80px; 
 }
-.flecheprev a, .flechesuiv a {
+.flecheprev-dev  a, .flechesuiv-dev  a {
     text-decoration: none; 
     color: black; 
 }
-.flecheprev a:hover, .flechesuiv a:hover {
+.flecheprev-dev  a:hover, .flechesuiv-dev  a:hover {
     text-decoration: none; 
     color: lavender; 
 }
-
-
-/* Centrer le titre */
-.titre {
+.titre-site {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -379,15 +351,13 @@ hr.solid {
     text-decoration: none;
     color: black; 
 }
-.titre a {
+.titre-site a {
     text-decoration: none;
     color: black; 
 }
-
-.titre a:hover {
+.titre-site a:hover {
     color:lavender; 
 }
-
 .colonne-dev {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -397,18 +367,17 @@ hr.solid {
     width:900px; 
     margin: 30px 10px 10px 50px; 
 }
-
 .dev-p {
     font-size:14px; 
     margin: 30px 50px 10px 10px; 
     text-align: justify;
 }
-
 .dev-p a{
     text-decoration:none; 
     font-style: italic;
     color: grey; 
 }
+
 
 
 /*FOOTER*/ 
