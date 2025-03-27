@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const preview = document.querySelector('.preview');
     const previewImage = document.querySelector('.preview-image');
@@ -6,8 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const previewDescription = document.querySelector('.preview-description');
     const closePreview = document.querySelector('.close-preview');
 
+    // Appliquer un léger décalage aléatoire
     galleryItems.forEach(item => {
-        item.addEventListener('click', function() {
+        let randomOffsetX = (Math.random() - 0.5) * 20; // Entre -10px et 10px
+        let randomOffsetY = (Math.random() - 0.5) * 20;
+        item.style.transform = `translate(${randomOffsetX}px, ${randomOffsetY}px)`;
+    });
+
+    // Gestion du preview
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function () {
             const title = this.dataset.title;
             const content = this.dataset.content;
             const imageUrl = this.querySelector('.gallery-item-img').style.backgroundImage;
@@ -18,49 +26,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
             previewTitle.textContent = title;
             previewDescription.textContent = content;
-            preview.style.display = 'flex'; // Ouvre le preview
+            preview.classList.add('show');
         });
     });
 
-    closePreview.addEventListener('click', function() {
-        preview.style.display = 'none'; // Ferme le preview
+    closePreview.addEventListener('click', function () {
+        preview.classList.remove('show');
     });
 
-    // Fermer le preview en cliquant en dehors
-    preview.addEventListener('click', function(event) {
+    preview.addEventListener('click', function (event) {
         if (event.target === preview) {
-            preview.style.display = 'none';
+            preview.classList.remove('show');
         }
     });
 
-    closePreview.addEventListener('click', function() {
-        preview.classList.remove('show'); // Animation de disparition
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const galleryItems = document.querySelectorAll(".gallery-item");
-    
-        galleryItems.forEach(item => {
-            let x = Math.random() * (window.innerWidth - 120); // Largeur - marge
-            let y = Math.random() * (window.innerHeight - 120); // Hauteur - marge
-    
-            item.style.transform = `translate(${x}px, ${y}px)`;
-        });
-    });
-    
-
     // Effet magnétique
     galleryItems.forEach(item => {
-        item.addEventListener('mousemove', function(event) {
+        item.addEventListener('mousemove', function (event) {
             let rect = this.getBoundingClientRect();
             let x = event.clientX - rect.left - rect.width / 2;
             let y = event.clientY - rect.top - rect.height / 2;
 
-            this.style.transform = `rotateY(${x / 20}deg) rotateX(${-y / 20}deg)`;
+            this.style.transform = `translate(${x / 20}px, ${y / 20}px)`;
         });
 
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        item.addEventListener('mouseleave', function () {
+            this.style.transform = '';
         });
     });
 });

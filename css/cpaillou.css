@@ -413,59 +413,55 @@ hr.solid {
 
 .menu-art > div:hover a {
     color: white;
-
+}
 
 
 /* Galerie */
 
 .gallery {
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(50, 2%);
+    grid-template-rows: repeat(50, 2%);
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .gallery-item {
-    position: absolute;
-    width: 100px; /* Ajuste selon la taille de tes images */
-    height: 100px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    will-change: transform;
     transition: transform 0.3s ease-out;
-    cursor: pointer;
-    transform-style: preserve-3d;
 }
 
+/* Images */
 .gallery-item-img {
-    width: 80px; 
-    height: 80px; 
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    transition: transform 0.3s ease-out;
 }
 
-.gallery-item-img img {
-    max-width: 80px;
-    max-height: 80px;
-    height: auto;
-    object-fit: cover;
-    display: block;
+/* Positions personnalisées */
+.pos-1 { --grid-row: 10; --grid-column: 1; }
+.pos-2 { --grid-row: 1; --grid-column: 18; }
+
+.grid__item {
+    grid-area: var(--grid-row) / var(--grid-column) / span 5 / span 5;
 }
 
-
-/* Effet hover */
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-/* Prévisualisation */
-
+/* Effet preview */
 .preview {
-    display: none; /* Cache le preview au début */
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: auto;
+    max-width: 500px;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -474,47 +470,37 @@ hr.solid {
 }
 
 .preview.show {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .preview-content {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    max-width: 500px;
-    transform: scale(0.8);
-    transition: transform 0.5s ease-out;
-}
-
-.preview.show .preview-content {
-    transform: scale(1);
 }
 
 .preview-image {
-    width: 100% !important;
-    max-width: 300px !important; /* Fixe une taille max */
-    height: auto !important;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: contain;
 }
 
-
 .close-preview {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     background: none;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 1.5em;
     cursor: pointer;
 }
-
-
 
 /*FOOTER*/ 
 footer {
     margin-top: 50px; 
     font-size:10px; 
-  }
+}
