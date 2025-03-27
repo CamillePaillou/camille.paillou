@@ -392,6 +392,7 @@ hr.solid {
     font-size:15px; 
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 20px; 
 }
 
 .menu-art > div {
@@ -429,8 +430,8 @@ hr.solid {
 
 .gallery-item {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 150px;
     will-change: transform;
     transition: transform 0.3s ease-out;
 }
@@ -446,8 +447,24 @@ hr.solid {
 }
 
 /* Positions personnalisées */
-.pos-1 { --grid-row: 10; --grid-column: 1; }
-.pos-2 { --grid-row: 1; --grid-column: 18; }
+.pos-1 { --grid-row: 10; --grid-column: 2; }
+.pos-2 { --grid-row: 35; --grid-column: 30; }
+.pos-3 { --grid-row: 3; --grid-column: 32; }
+.pos-4 { --grid-row:15; --grid-column: 15; }
+.pos-5 { --grid-row: 17; --grid-column: 25; }
+.pos-6 { --grid-row: 1; --grid-column: 43; }
+.pos-7 { --grid-row: 38; --grid-column: 3; }
+.pos-8 { --grid-row: 44; --grid-column: 13; }
+.pos-9 { --grid-row: 19; --grid-column: 35; }
+.pos-10 { --grid-row: 35; --grid-column: 42; }
+.pos-11 { --grid-row: 16; --grid-column: 44; }
+.pos-12 { --grid-row: 30; --grid-column: 18; }
+.pos-13 { --grid-row: 24; --grid-column: 5; }
+.pos-14 { --grid-row: 51; --grid-column: 4; }
+.pos-15 { --grid-row: 2; --grid-column: 11; }
+.pos-16 { --grid-row: 1; --grid-column: 22; }
+.pos-17 { --grid-row: 48; --grid-column: 25; }
+.pos-18 { --grid-row: 50; --grid-column: 40; }
 
 .grid__item {
     grid-area: var(--grid-row) / var(--grid-column) / span 5 / span 5;
