@@ -417,7 +417,7 @@ hr.solid {
 }
 
 
-/* Galerie */
+/* Galerie photo works */
 
 .gallery {
     display: grid;
@@ -508,6 +508,50 @@ hr.solid {
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 20px;
+}
+
+
+/*PORTFOLIO*/ 
+.colonne-portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.colonne-portfolio-left img{
+    width:75%; 
+    margin:20px 20px 10px 150px; 
+}
+.colonne-portfolio-right img {
+    height:20%; 
+    margin:0px 20px 10px 100px; 
+}
+
+.para-portfolio {
+    text-align: center;
+    margin-left : 85px; 
+}
+
+.tele, .telev{
+    background-color: lavender;
+    border: none; 
+    padding: 15px; 
+    border-radius: 20px; 
+}
+.tele{
+    margin: 20px 20px 20px 360px; 
+}
+.telev{
+    margin: 20px 20px 20px 200px; 
+}
+.tele a, .telev a {
+    text-decoration: none; 
+    color: black; 
+}
+.tele a:hover, .telev a:hover {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;
 }
 
 
