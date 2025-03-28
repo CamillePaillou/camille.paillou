@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const previewDescription = document.querySelector('.preview-description');
     const closePreview = document.querySelector('.close-preview');
 
+    // Vérifier que GSAP est bien chargé
+    if (typeof gsap === "undefined") {
+        console.error("GSAP n'est pas chargé !");
+        return;
+    }
+
     // Appliquer un léger décalage aléatoire
     galleryItems.forEach(item => {
         let randomOffsetX = (Math.random() - 0.5) * 20; // Entre -10px et 10px
@@ -13,31 +19,39 @@ document.addEventListener('DOMContentLoaded', function () {
         item.style.transform = `translate(${randomOffsetX}px, ${randomOffsetY}px)`;
     });
 
-    // Gestion du preview
+    // Effet 3D au survol
     galleryItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const title = this.dataset.title;
-            const content = this.dataset.content;
-            const imageUrl = this.querySelector('.gallery-item-img').style.backgroundImage;
-            
-            if (imageUrl) {
-                previewImage.src = imageUrl.replace('url("', '').replace('")', '');
-            }
-
-            previewTitle.textContent = title;
-            previewDescription.textContent = content;
-            preview.classList.add('show');
+        item.addEventListener("mousemove", function (event) {
+            let rect = this.getBoundingClientRect();
+            let x = (event.clientX - rect.left) / rect.width - 0.5;
+            let y = (event.clientY - rect.top) / rect.height - 0.5;
+    
+            gsap.to(this, {
+                rotationY: x * 20,
+                rotationX: -y * 20,
+                scale: 1.1,
+                ease: "power2.out",
+                duration: 0.3
+            });
+        });
+    
+        item.addEventListener("mouseleave", function () {
+            gsap.to(this, {
+                rotationY: 0,
+                rotationX: 0,
+                scale: 1,
+                ease: "power2.out",
+                duration: 0.5
+            });
         });
     });
 
-    closePreview.addEventListener('click', function () {
-        preview.classList.remove('show');
-    });
 
-    preview.addEventListener('click', function (event) {
-        if (event.target === preview) {
-            preview.classList.remove('show');
-        }
+    // SCROLL HORIZONTAL
+    const gallery = document.querySelector('.gallery');
+    gallery.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        gallery.scrollLeft += event.deltaY * 2; // Augmenter ou diminuer la vitesse du scroll
     });
 
     // Effet magnétique
