@@ -553,6 +553,83 @@ hr.solid {
     color: white; 
     font-weight: bold;
 }
+.colonne-art {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.images-superposees {
+    position: relative;
+    width: 100%;
+    height: 900px; /* Taille de l'image horizontale */
+}
+.img-horiz {
+    width: 900px;
+    display: block;
+    margin: 20px auto;
+}
+.img-verti {
+    height: 500px;
+    display: block;
+    margin: 30px auto;
+}
+
+/*image modal*/
+/* Effet d'agrandissement avant le clic */
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Style du modal */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    margin-bottom: 20px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet d'agrandissement de l'image en modal */
+.modal-content img:hover {
+    transform: scale(1.1);
+}
+
+/* Fermer le modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
 
 /*DEMARCHE ARTISTIQUE*/
 .dem {
@@ -576,8 +653,15 @@ hr.solid {
 	height: 90%;
 	top: 0;
 	left: 165px;
-	background: black;
+    /*background: repeating-linear-gradient(
+        to bottom,
+        black,
+        black 5px,
+        transparent 5px,
+        transparent 20px
+    );*/
 }
+
 .event {
 	position: relative;
 	margin-bottom: 80px;
@@ -591,7 +675,8 @@ hr.solid {
 	box-shadow: 
 		0 0 0 5px black, 
 		0 1px 1px rgba(255,255,255,0.5);
-	background-repeat: no-repeat;
+    background-size: cover; /* Ajuste la taille de l'image */
+    background-position: center; /* Centre l'image */
 	border-radius: 50%;
 }
 
@@ -615,7 +700,8 @@ hr.solid {
 	font-size: 15px;
 	text-transform: uppercase;
 	position: absolute;
-	bottom: -30px;
+	bottom: -50px;
+    display: block;  
 }
 
 .user-1 {
@@ -666,10 +752,10 @@ hr.solid {
 	cursor: pointer;
 }
 
-/*c'est le e 702 */ 
 .event label:after {
-	content: 'e702';
+	content:'\2716';
  	background: #fff;
+    border: 2px solid black; 
     border-radius: 50%;
     color: black;
     font-size: 26px;
@@ -680,6 +766,16 @@ hr.solid {
     line-height: 24px;
     position: absolute;
     text-align: center;
+    padding: 5px; 
+    box-shadow: 0 0 15px 5px rgba(230, 230, 250, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.event:hover label:after {
+    color: lavender; /* Change la couleur de la croix */
+    border-color: lavender;
+    box-shadow: 0 0 15px 5px rgba(230, 230, 250, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .content-perspective {
@@ -690,12 +786,12 @@ hr.solid {
 .content-perspective:before {
 	content: '';
 	width: 37px;
-	left: -51px;
-	top: 45px;
+	left: -39px;
+	top: 42px;
 	position: absolute;
-	height: 1px;
+	height: 3px;
 	z-index: -1;
-	background: #fff;
+	background: black;
 }
 .content {
 	transform: rotateY(10deg);
@@ -716,14 +812,14 @@ hr.solid {
 	color: black;
 }
 .content-inner p {
-	font-size: 1.8px;
+	font-size: 20px;
 	max-height: 0px;
 	overflow: hidden;
 	color: rgba(0,0,0,0);
 	text-align: left;
 }
 .content-inner:before {
-	content: '25c2';
+	content: '';
 	font-weight: normal;
 	font-size: 54px;
 	line-height: 54px;
@@ -751,9 +847,10 @@ hr.solid {
 	transition: max-height 0.5s linear, color 0.3s linear;
 }
 .event input[type="radio"]:checked + label:after {
-	content: '2714';
+	content: '✓';
 	color: lavender;
-	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px 5px rgba(230, 230, 250, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
 }
 .event input[type="radio"]:checked ~ .content-perspective:before {
 	background: lavender;
@@ -790,6 +887,10 @@ hr.solid {
 .event input[type="radio"]:checked ~ .thumb:before {
 	background: lavender; 
 }
+
+
+
+
 
 /*FOOTER*/ 
 footer {
