@@ -1,42 +1,45 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Créer l'élément modal
-    let modal = document.createElement("div");
-    modal.id = "imageModal";
-    modal.innerHTML = `
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImg" src="" alt="Image en grand format">
-        </div>
-    `;
-    document.body.appendChild(modal);
+let currentIndex = 0;
+let images = document.querySelectorAll(".thumbnail");
 
-    // Sélectionner toutes les images et ajouter l'événement de clic
-    document.querySelectorAll(".dev-image img, .art-verti img").forEach(img => {
-        img.addEventListener("click", function () {
-            document.getElementById("modalImg").src = this.src;
-            modal.style.display = "flex";
-        });
-    });
-
-    // Fermer le modal
-    modal.querySelector(".close").addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    // Fermer le modal en cliquant à l'extérieur de l'image
-    modal.addEventListener("click", function (e) {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-
-    // Ajouter un effet d'agrandissement au survol du modal
+// Ouvrir le modal
+function openModal(index) {
+    currentIndex = index;
+    let modal = document.getElementById("xModal");
     let modalImg = document.getElementById("modalImg");
-    modalImg.addEventListener("mouseover", function () {
-        this.style.transform = "scale(1.1)";
-    });
 
-    modalImg.addEventListener("mouseout", function () {
-        this.style.transform = "scale(1)";
-    });
+    modalImg.src = images[currentIndex].src;
+    modal.style.display = "flex";
+}
+
+// Fermer le modal
+function closeModal() {
+    document.getElementById("xModal").style.display = "none";
+}
+
+// Fermer en cliquant hors de l’image
+function clickOutside(event) {
+    if (event.target.classList.contains("xModal")) {
+        closeModal();
+    }
+}
+
+// Changer d’image avec les boutons
+function changeSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    if (currentIndex >= images.length) currentIndex = 0;
+
+    document.getElementById("modalImg").src = images[currentIndex].src;
+}
+
+// Navigation avec les touches du clavier
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") changeSlide(1);
+    if (event.key === "ArrowLeft") changeSlide(-1);
+    if (event.key === "Escape") closeModal();
+});
+
+// Zoom sur l’image
+document.getElementById("modalImg").addEventListener("click", function () {
+    this.classList.toggle("zoomed");
 });

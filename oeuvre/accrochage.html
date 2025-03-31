@@ -30,25 +30,31 @@
 
     <div class="dev-container">
         <div class="flecheprev-dev"><a href="carton.html">&larr;</a></div>
+        <div class="titre-site">Accrochage cour vitrée</div>
         <div class="flechesuiv-dev"><a href="obeissance.html">&rarr;</a></div>
     </div>
-    <div class="colonne-dev">
-        <div class="dev-image">
-            <img src="../images/art/accrochagebache/1.webp"> 
-            <img src="../images/art/accrochagebache/2.webp">
+
+        <div>
+            <img src="../images/art/accrochagebache/1.webp" alt="Image 1" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
+            <img src="../images/art/accrochagebache/2.webp" alt="Image 2" class="zoom-modal thumbnail img-horiz" onclick="openModal(1)">
         </div>
-        <div class="dev-p">
+
+    <section>
+        <div class="art-p">
             <p><strong>Accrochage cours vitrée</strong></p>
             <p>Beaux-Arts de Paris<br>2024<br>Oeuvres présentes : Omerta, L'Obéissance,</p>
         </div>
-    </div>
+    </section>
 
-    <div id="imageModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImg" src="" alt="Image en grand format">
+    <div id="xModal" class="xModal" onclick="clickOutside(event)">
+        <span class="close" onclick="closeModal()">&times;</span>
+        
+        <div class="xmodalContent">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <img id="modalImg" class="modal-image">
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
     </div>
-    
+
 </body>
 </html>
