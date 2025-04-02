@@ -9,9 +9,7 @@
     <script src="js/typing1.js" defer></script>
 </head>
 <body>
-
-    <!--<?php require_once(__DIR__ . '/partials/header.php'); ?> 
-    <?php require_once(__DIR__ . '/partials/footer.php'); ?>-->
+    
 
     <header>
         <h1 class="cp"><a href="index.html" id="title1"></a></h1>
@@ -40,7 +38,7 @@
         </div>
         <div class="tags-column">
             <a href="dev.html" class="tag tag1 pulsing-border">développement web</a>
-            <a href="art.html" class="tag tag2 pulsing-border">pratique artistique</a>
+            <a href="/art.php" class="tag tag2 pulsing-border">pratique artistique</a>
         </div>
     </div>
 
@@ -61,10 +59,8 @@
           </form>
     </div>
 
+    <?php require_once 'partials/footer.php'; ?>
 
-    <footer> 
-        <p class="footer">© Copyright Camille Paillou - 2025 </p>
-    </footer>
 
 </body>
 </html>
