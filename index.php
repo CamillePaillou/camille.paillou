@@ -12,7 +12,7 @@
     
 
     <header>
-        <h1 class="cp"><a href="index.html" id="title1"></a></h1>
+        <h1 class="cp"><a href="index.php" id="title1"></a></h1>
         <hr class="solid">
     </header>
 

@@ -10,14 +10,11 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="titre-art"><a href="art.html" id="title3"></a></h1>
-        <hr class="solid">
-    </header>
+    <?php require_once 'partials/headertitreart.php'; ?>
 
     <div class="menu">
-        <div><a href="/index.html">bio-contact</a></div>
-        <div><a href="/dev.html">développement web</a></div>
+        <div><a href="/index.php">bio-contact</a></div>
+        <div><a href="/dev.php">développement web</a></div>
     </div>
 
     <div class="menu-art">
@@ -45,9 +42,7 @@
                 </p>
             </div>  
 
-    <footer> 
-        <p>© Copyright Camille Paillou - 2025 </p>
-    </footer>
+    <?php require_once 'partials/footer.php'; ?>
 
     </body>
     </html>

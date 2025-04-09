@@ -10,10 +10,7 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="titre-dev"><a href="../dev.html" id="title2"></a></h1>
-        <hr class="solid">
-    </header>
+    <?php require_once 'partials/headertitredev.php'; ?>
 
     <div class="menu">
         <div><a href="../index.html" class="index">bio-contact</a></div>
@@ -68,9 +65,7 @@
         </div> 
     </div>
 
-<footer>
-    <p class="footer">© Copyright Camille Paillou - 2025 </p>
-</footer>
+    <?php require_once 'partials/footer.php'; ?>
 
 </body>
 </html>

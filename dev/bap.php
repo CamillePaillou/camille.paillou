@@ -10,20 +10,17 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="titre-dev"><a href="../dev.html" id="title2"></a></h1>
-        <hr class="solid">
-    </header>
+    <?php require_once 'partials/headertitredev.php'; ?>
 
     <div class="menu">
-        <div><a href="../index.html" class="index">bio-contact</a></div>
-        <div><a href="../art.html" class="art">pratique artistique</a></div>
+        <div><a href="../index.php" class="index">bio-contact</a></div>
+        <div><a href="../art.php" class="art">pratique artistique</a></div>
     </div>
 
     <div class="dev-container">
-        <div class="flecheprev-dev"><a href="spp.html">&larr;</a></div>
+        <div class="flecheprev-dev"><a href="spp.php">&larr;</a></div>
         <div class="titre-site"><a href="https://hanamartinelli.com/" target="_blank">BAP.PERF</a></div>
-        <div class="flechesuiv-dev"><a href="hana.html">&rarr;</a></div>
+        <div class="flechesuiv-dev"><a href="hana.php">&rarr;</a></div>
     </div>
 
 
@@ -57,9 +54,7 @@
         </div>
     </div>
     
-    <footer> 
-        <p class="footer">© Copyright Camille Paillou - 2025 </p>
-    </footer>
+    <?php require_once 'partials/footer.php'; ?>
         
 </body>
 </html>

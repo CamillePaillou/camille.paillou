@@ -11,15 +11,9 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="titre-dev"><a href="dev.html" id="title2"></a></h1>
-        <hr class="solid">
-    </header>
+    <?php require_once 'partials/headertitredev.php'; ?>
 
-    <div class="menu">
-        <div><a href="index.html" class="index">bio-contact</a></div>
-        <div><a href="art.html" class="art">pratique artistique</a></div>
-    </div>
+    <?php require_once 'partials/indexdev.php'; ?>
 
 
     <div class="hero" data-id="1">
@@ -60,9 +54,7 @@
     <!-- Icône emoji boule -->
     <div id="timeline-icon" class="icon">&#129504;</div>
     
-    <footer> 
-        <p>© Copyright Camille Paillou - 2025 </p>
-    </footer>
+    <?php require_once 'partials/footer.php'; ?>
 
 </body>
 </html>
