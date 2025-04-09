@@ -584,14 +584,18 @@ hr.solid {
     width: 900px !important;
     height: auto !important;
     max-width: 900px !important;
+    display: block;
+    margin: 20px auto;
 }
 .thumbnail.img-verti {
     width: auto !important;
     height: 500px !important;
     max-width: 500px !important;
+    display: block; 
+    margin: 30px auto;
 }
 .thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1);
     max-width:920px; 
 }
 
