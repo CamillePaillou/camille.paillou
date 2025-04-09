@@ -554,38 +554,6 @@ hr.solid {
     font-weight: bold;
 }
 
-/*.colonne-art {
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-.images-superposees {
-    position: relative;
-    width: 100%;
-    height: 900px; }
-*/ 
-
-.img-horiz {
-    width: 900px;
-    display: block;
-    margin: 20px auto;
-}
-.img-verti {
-    height: 500px;
-    display: block;
-    margin: 30px auto;
-}
-
-.img-horiz {
-    width: 900px;
-    display: block;
-    margin: 20px auto;
-}
-.img-verti {
-    height: 700px;
-    display: block;
-    margin: 30px auto;
-}
-
 .art-p {
     display: block;
     margin: 100px 20px 50px 250px;
@@ -608,13 +576,20 @@ hr.solid {
 /* Style du modal */
 /* Effet de zoom progressif sur les images */
 .thumbnail {
-    width: 100%;
-    max-width: 900px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     margin-bottom: 20px ! important; 
 }
-
+.thumbnail.img-horiz {
+    width: 900px !important;
+    height: auto !important;
+    max-width: 900px !important;
+}
+.thumbnail.img-verti {
+    width: auto !important;
+    height: 500px !important;
+    max-width: 500px !important;
+}
 .thumbnail:hover {
     transform: scale(1.05);
     max-width:920px; 

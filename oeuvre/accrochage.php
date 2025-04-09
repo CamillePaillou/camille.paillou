@@ -11,11 +11,11 @@
 </head>
 <body>
 
-    <?php require_once 'partials/headertitreart.php'; ?>
+    <?php require_once __DIR__ . '/../partials/headertitreart.php';?>
 
-    <?php require_once 'partials/indexart.php'; ?>
+    <?php require_once __DIR__ . '/../partials/indexart.php'; ?>
 
-    <?php require_once 'partials/menuart.php'; ?>
+    <?php require_once __DIR__ . '/../partials/menuart.php'; ?>
 
     <div class="dev-container">
         <div class="flecheprev-dev"><a href="carton.php">&larr;</a></div>
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <?php require_once 'partials/footer.php'; ?>
+    <?php require_once __DIR__ . '/../partials/footer.php'; ?>
 
 </body>
 </html>
