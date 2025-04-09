@@ -23,7 +23,7 @@
                 <strong>Je recherche pour la rentrée 2025, une entreprise pour réaliser une alternance et devenir développeuse web.</strong> Je vous détaille mon projet et mon parcours dans les lignes suivantes. 
             <br><br><strong>-> art</strong> J’ai d’abord obtenu ma licence aux Beaux-Arts de Tours où je réalisais des performances absurdes et colorés jusqu’en 2022.  A mon arrivée à Paris, j’ai suivi une formation professionnalisante pour apprendre à créer des expositions (<a href="https://beauxartsparis.fr/fr/exposition-simple/sur-le-feu" target="_blank">Sur le Feu,</a>2022)
                  et j’ai intégré l’atelier d’Emmanuelle Huynh (danse) et d’Anne Rochette (sculpture). 
-                <br> Aujourd’hui, mes deux matériaux de prédilection sont le papier mâché et la bâche plastique avec lesquels je créé des formes minimalistes et des manipulations performatives. Vous pouvez découvrir ma démarche artistique et mes productions <a href="art.php"target="_blank">ici</a>. 
+                <br> Aujourd’hui, mes deux matériaux de prédilection sont le papier mâché et la bâche plastique avec lesquels je créé des formes minimalistes et des manipulations performatives. Vous pouvez découvrir ma démarche artistique et mes productions <a href="art.php" target="_blank">ici</a>. 
             </p>
         </div>
         <div class="bio-column">
@@ -38,7 +38,7 @@
         </div>
         <div class="tags-column">
             <a href="dev.php" class="tag tag1 pulsing-border">développement web</a>
-            <a href="/art.php" class="tag tag2 pulsing-border">pratique artistique</a>
+            <a href="art.php" class="tag tag2 pulsing-border">pratique artistique</a>
         </div>
     </div>
 

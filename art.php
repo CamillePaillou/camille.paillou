@@ -12,9 +12,12 @@
 </head>
 <body>
 
-    <?php require_once 'partials/headertitreart.php'; ?>
+    <?php require_once __DIR__ . '/partials/headertitreart.php';?>
 
-
+    <div class="menu">
+        <div><a href="index.php">bio-contact</a></div>
+        <div><a href="dev.php">développement web</a></div>
+    </div>
 
     <div class="menu-art">
         <div><a href="art/demcv.php">démarche artistique</a></div>

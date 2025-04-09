@@ -6,13 +6,13 @@
     <title>Camille Paillou </title>
     <link rel="stylesheet" href="../css/cpaillou.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <script src="../js/typing2.js" defer></script>
+    <script src="/../camille.paillou/js/typing2.js" defer></script>
 </head>
 <body>
 
-    <?php require_once 'partials/headertitredev.php'; ?>
+    <?php require_once __DIR__ . '/../partials/headertitredev.php';?>
 
-    <?php require_once 'partials/indexdev.php'; ?>
+    <?php require_once __DIR__ . '/../partials/indexdev.php'; ?>
 
     <div class="dev-container">
         <div class="flecheprev-dev"><a href="spp.php">&larr;</a></div>
@@ -50,7 +50,7 @@
         </div>
     </div>
     
-    <?php require_once 'partials/footer.php'; ?>
-        
+    <?php require_once __DIR__ . '/../partials/footer.php'; ?>
+    
 </body>
 </html>

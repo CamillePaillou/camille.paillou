@@ -6,19 +6,19 @@
     <title>Camille Paillou </title>
     <link rel="stylesheet" href="../css/cpaillou.css"/>
     <link rel="stylesheet" href="../css/normalize.css" />
-    <script src="/js/typing3.js" defer></script>
+    <script src="/../camille.paillou/js/typing3.js" defer></script>
     <script src="/js/news.js" defer></script>
 </head>
 <body>
 
-    <?php require_once 'partials/headertitreart.php'; ?>
+<?php require_once __DIR__ . '/../partials/headertitreart.php';?>
 
-    <?php require_once 'partials/indexart.php'; ?>
+<?php require_once __DIR__ . '/../partials/indexart.php'; ?>
 
     <div class="menu-art">
-        <div><a href="/art.php">works</a></div>
-        <div><a href="/art/demcv.php">démarche artistique</a></div>
-        <div><a href="/art/portfolio.php">portfolio</a></div>
+        <div><a href="../art.php">works</a></div>
+        <div><a href="demcv.php">démarche artistique</a></div>
+        <div><a href="portfolio.php">portfolio</a></div>
     </div>
 
     <h2 class="bio">expériences et cv</h2>
@@ -260,7 +260,7 @@
         </ul>
     </div>
 
-    <?php require_once 'partials/footer.php'; ?>
+    <?php require_once __DIR__ . '/../partials/footer.php'; ?>
 
     </body>
     </html>
