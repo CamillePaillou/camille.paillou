@@ -17,8 +17,8 @@
 <?php require_once 'partials/menuart.php'; ?>
 
     <div class="dev-container">
-        <div class="flecheprev-dev"><a href="vague.html">&larr;</a></div>
-        <div class="flechesuiv-dev"><a href="permission.html">&rarr;</a></div>
+        <div class="flecheprev-dev"><a href="vague.php">&larr;</a></div>
+        <div class="flechesuiv-dev"><a href="permission.php">&rarr;</a></div>
     </div>
     <div class="colonne-dev">
         <div class="dev-image">

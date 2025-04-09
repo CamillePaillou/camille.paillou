@@ -18,9 +18,9 @@
     <?php require_once 'partials/menuart.php'; ?>
 
     <div class="dev-container">
-        <div class="flecheprev-dev"><a href="carton.html">&larr;</a></div>
+        <div class="flecheprev-dev"><a href="carton.php">&larr;</a></div>
         <div class="titre-site">Accrochage cour vitrée</div>
-        <div class="flechesuiv-dev"><a href="obeissance.html">&rarr;</a></div>
+        <div class="flechesuiv-dev"><a href="obeissance.php">&rarr;</a></div>
     </div>
 
         <div>

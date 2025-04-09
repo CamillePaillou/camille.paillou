@@ -15,9 +15,9 @@
     <?php require_once 'partials/indexart.php'; ?>
 
     <div class="menu-art">
-        <div><a href="/art.html">works</a></div>
-        <div><a href="/art/news.html">expériences et cv</a></div>
-        <div><a href="/art/portfolio.html">portfolio</a></div>
+        <div><a href="/art.php">works</a></div>
+        <div><a href="/art/news.php">expériences et cv</a></div>
+        <div><a href="/art/portfolio.php">portfolio</a></div>
     </div>
 
     <h2 class="bio">démarche artistique</h2>

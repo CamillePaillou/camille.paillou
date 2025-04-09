@@ -17,19 +17,19 @@
 
 
     <div class="hero" data-id="1">
-        <h1 class="overlay-text"><a href="dev/hana.html">HANA MARTINELLI</a></h1>
+        <h1 class="overlay-text"><a href="dev/hana.php">HANA MARTINELLI</a></h1>
         <p class="overlay-para">Site vitrine pour une sculptrice.</p>
         <img src="images/dev/hana/hanam.PNG" alt="Image de fond">
     </div>
     
     <div class="hero" data-id="2">
-        <h1 class="overlay-text"><a href="dev/spp.html">SON PAPIER PIXEL</a></h1>
+        <h1 class="overlay-text"><a href="dev/spp.php">SON PAPIER PIXEL</a></h1>
         <p class="overlay-para">Son Papier Pixel présente le workshop et la documentation issue du projet européen Codename Seedling. </p>
         <img src="images/dev/spp/spp.png" alt="Image de fond">
     </div>
     
     <div class="hero" data-id="3">
-        <h1 class="overlay-text"><a href="dev/bap.html">BAP.PERF</a></h1>
+        <h1 class="overlay-text"><a href="dev/bap.php">BAP.PERF</a></h1>
         <p class="overlay-para">BAP.PERF est un site pour archiver les performances des étudiants des Beaux-Arts de Paris</p>
         <img src="images/dev/bapperf/bap7.PNG" alt="Image de fond">
     </div>
