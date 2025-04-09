@@ -10,22 +10,11 @@
 </head>
 <body>
 
-    <header>
-        <h1 class="titre-art"><a href="art.html" id="title3"></a></h1>
-        <hr class="solid">
-    </header>
+<?php require_once 'partials/headertitreart.php'; ?>
 
-    <div class="menu">
-        <div><a href="/index.html">bio-contact</a></div>
-        <div><a href="/dev.html">développement web</a></div>
-    </div>
+<?php require_once 'partials/indexart.php'; ?>
 
-    <div class="menu-art">
-        <div><a href="/art.html">works</a></div>
-        <div><a href="/art/demcv.html">démarche et cv</a></div>
-        <div><a href="/art/news.html">news</a></div>
-        <div><a href="/art/portfolio.html">portfolio</a></div>
-    </div>
+<?php require_once 'partials/menuart.php'; ?>
 
     <div class="dev-container">
         <div class="flecheprev-dev"><a href="permission.html">&larr;</a></div>
@@ -47,6 +36,8 @@
             <p>2025<br>papier mâché<br>1m80</p>
         </div>
     </div>
+
+    <?php require_once 'partials/footer.php'; ?>
 
 </body>
 </html>

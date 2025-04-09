@@ -12,10 +12,7 @@
 
     <?php require_once 'partials/headertitreart.php'; ?>
 
-    <div class="menu">
-        <div><a href="/index.php">bio-contact</a></div>
-        <div><a href="/dev.php">développement web</a></div>
-    </div>
+    <?php require_once 'partials/indexart.php'; ?>
 
     <div class="menu-art">
         <div><a href="/art.html">works</a></div>

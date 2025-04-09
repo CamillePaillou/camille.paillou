@@ -12,15 +12,12 @@
 
     <?php require_once 'partials/headertitredev.php'; ?>
 
-    <div class="menu">
-        <div><a href="../index.html" class="index">bio-contact</a></div>
-        <div><a href="../art.html" class="art">pratique artistique</a></div>
-    </div>
+    <?php require_once 'partials/indexdev.php'; ?>
 
     <div class="dev-container"> 
-        <div class="flecheprev-dev"><a href="bap.html">&larr;</a></div>
+        <div class="flecheprev-dev"><a href="bap.php">&larr;</a></div>
         <div class="titre-site"><a href="https://hanamartinelli.com/" target="_blank">HANA MARTINELLI</a></div>
-        <div class="flechesuiv-dev"><a href="spp.html">&rarr;</a></div>
+        <div class="flechesuiv-dev"><a href="spp.php">&rarr;</a></div>
     </div>
 
     <div class="colonne-dev">

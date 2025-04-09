@@ -14,10 +14,7 @@
 
     <?php require_once 'partials/headertitreart.php'; ?>
 
-    <div class="menu">
-        <div><a href="index.html">bio-contact</a></div>
-        <div><a href="dev.html">développement web</a></div>
-    </div>
+
 
     <div class="menu-art">
         <div><a href="art/demcv.html">démarche artistique</a></div>
