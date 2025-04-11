@@ -6,15 +6,38 @@
     <title>Camille Paillou </title>
     <link rel="stylesheet" href=".//css/cpaillou.css" />
     <link rel="stylesheet" href=".//css/normalize.css" />
-    <script src="js/typing1.js" defer></script>
+    <script src="js/photoindex.js" defer></script>
 </head>
 <body>
     
 
-    <header>
-        <h1 class="cp"><a href="index.php" id="title1"></a></h1>
-        <hr class="solid">
-    </header>
+<!--<header>
+    <script src="js/typing1.js" defer></script>
+    <h1 class="cp"><a href="index.php" id="title1"></a></h1>
+    <hr class="solid">
+</header>-->
+
+
+<section class="split-screen">
+<div class="cp">Camille Paillou</div>
+
+  <div class="column left">
+    <img src="images/dev/hana/hana2.PNG" class="slideshow-img" alt="Gauche 1">
+    <img src="images/dev/bapperf/bap7.PNG" class="slideshow-img" alt="Gauche 2">
+    <img src="images/dev/spp/spp2.PNG" class="slideshow-img" alt="Gauche 3">
+    <div class="overlay-text">développement web</div>
+    <a href="dev.php" target="blank">ici</a>
+  </div>
+  
+  <div class="column right">
+    <img src="images/art/echine/1.webp" class="slideshow-img" alt="Droite 1">
+    <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Droite 2">
+    <img src="images/art/permission/3.webp" class="slideshow-img" alt="Droite 3">
+    <div class="overlay-text">pratique artistique</div>
+  </div>
+</section>
+
+
 
     <div class="bio-container">
         <div class="bio-column">
