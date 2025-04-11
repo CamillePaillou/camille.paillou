@@ -19,20 +19,19 @@
 
 
 <section class="split-screen">
-<div class="cp">Camille Paillou</div>
+    <div class="cp">Camille Paillou</div>
 
   <div class="column left">
     <img src="images/dev/hana/hana2.PNG" class="slideshow-img" alt="Gauche 1">
     <img src="images/dev/bapperf/bap7.PNG" class="slideshow-img" alt="Gauche 2">
     <img src="images/dev/spp/spp2.PNG" class="slideshow-img" alt="Gauche 3">
-    <div class="overlay-text">développement web</div>
-    <a href="dev.php" target="blank">ici</a>
+    <div><a href="dev.php" class="overlay-text" target="blank">développement web</a></div>
   </div>
   
   <div class="column right">
     <img src="images/art/echine/1.webp" class="slideshow-img" alt="Droite 1">
     <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Droite 2">
-    <img src="images/art/permission/3.webp" class="slideshow-img" alt="Droite 3">
+    <img src="images/art/permission/2.webp" class="slideshow-img" alt="Droite 3">
     <div class="overlay-text">pratique artistique</div>
   </div>
 </section>
