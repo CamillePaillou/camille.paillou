@@ -26,7 +26,7 @@
     <div>
         <img src="../images/art/vague/1.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
         <img src="../images/art/vague/2.webp" alt="Image 2" class="zoom-modal thumbnail img-horiz" onclick="openModal(1)">
-        <img src="../images/art/vague/3.webp" alt="Image 3" class="zoom-modal thumbnail img-verti" onclick="openModal(2)">
+        <img src="../images/art/vague/3.webp" alt="Image 3" class="zoom-modal thumbnail img-horiz" onclick="openModal(2)">
     </div>
 
     <section>

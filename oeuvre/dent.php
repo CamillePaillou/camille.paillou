@@ -23,15 +23,11 @@
         <div class="flechesuiv-dev"><a href="echine.php">&rarr;</a></div>
     </div>
 
-<!-- Conteneur pour les images horizontales -->
-<div class="gallery-horizontal">
-    <img src="../images/art/dent/1.webp" alt="Départ" class="zoom-modal thumbnail" onclick="openModal(0)"> 
-    <img src="../images/art/dent/2.webp" alt="Image 2" class="zoom-modal thumbnail" onclick="openModal(1)">
-    <img src="../images/art/dent/3.webp" alt="Image 3" class="zoom-modal thumbnail" onclick="openModal(2)">
+<div>
+    <img src="../images/art/dent/1.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
+    <img src="../images/art/dent/2.webp" alt="Image 2" class="zoom-modal thumbnail img-horiz" onclick="openModal(1)">
+    <img src="../images/art/dent/3.webp" alt="Image 3" class="zoom-modal thumbnail img-horiz" onclick="openModal(2)">
 </div>
-
-
-
 
     <section>
         <div class="art-p">

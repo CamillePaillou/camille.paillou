@@ -24,7 +24,7 @@
     </div>
 
     <div>
-        <img src="../images/art/memoire/1.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
+        <img src="../images/art/memoire/1.webp" alt="Départ" class="zoom-modal thumbnail img-verti" onclick="openModal(0)"> 
       </div>
 
     <section>

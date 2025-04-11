@@ -23,9 +23,9 @@
         <div class="flechesuiv-dev"><a href="emprise.php">&rarr;</a></div>
     </div>
 
-    <div class="art-verti">
-        <img src="../images/art/obeissance/1.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
-     </div>
+    <div>
+        <img src="../images/art/obeissance/1.webp" alt="Départ" class="zoom-modal thumbnail img-verti" onclick="openModal(0)"> 
+    </div>
 
     <section>
         <div class="art-p">

@@ -554,6 +554,7 @@ hr.solid {
     font-weight: bold;
 }
 
+/*PAGE WORK*/
 .art-p {
     display: block;
     margin: 100px 20px 50px 250px;
@@ -562,44 +563,37 @@ hr.solid {
     font-size: 15px; 
 }
 
-/*image modal*/
-/* Effet d'agrandissement avant le clic */
-.zoom-modal {
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.zoom-modal:hover {
-    transform: scale(1.1);
-}
-
-/* Style du modal */
-/* Effet de zoom progressif sur les images */
+/* Miniature avec effet de zoom au survol */
 .thumbnail {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 20px ! important; 
+    margin-bottom:30px; 
 }
-.thumbnail.img-horiz {
-    width: 900px !important;
-    height: auto !important;
-    max-width: 900px !important;
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    margin:50px auto 50px auto;
+}
+
+/* Miniature horizontale */
+.img-horiz {
+    width: 900px;
+    height: auto;
+    max-width: 900px;
     display: block;
     margin: 20px auto;
 }
-.thumbnail.img-verti {
-    width: auto !important;
-    height: 500px !important;
-    max-width: 500px !important;
-    display: block; 
+
+/* Miniature verticale */
+.img-verti {
+    width: auto;
+    height: 600px;
+    max-width: 600px;
+    display: block;
     margin: 30px auto;
 }
-.thumbnail:hover {
-    transform: scale(1);
-    max-width:920px; 
-}
 
-/* Modal styling */
+/* Modal principal */
 .xModal {
     display: none;
     position: fixed;
@@ -613,25 +607,42 @@ hr.solid {
     align-items: center;
 }
 
-/* Animation d'ouverture du modal */
+/* Conteneur de l'image modale */
 .xmodalContent {
     position: relative;
-    max-width: 950px;
+    max-width: 95vw;
+    max-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Image modale générique */
 .modal-image {
+    transition: transform 0.3s ease-in-out;
     max-width: 95%;
     max-height: 95%;
-    transition: transform 0.3s ease-in-out;
+    object-fit: contain;
+    cursor: zoom-in;
 }
 
-/* Effet de zoom */
+/* Zoom dans le modal */
 .modal-image.zoomed {
     transform: scale(2);
     cursor: zoom-out;
+}
+
+/* Image horizontale dans le modal */
+.modal-image.modal-img-horiz {
+    width: 95%;
+    height: auto;
+}
+
+/* Image verticale dans le modal */
+.modal-image.modal-img-verti {
+    width: auto;
+    height: 500px; 
+    max-height: 500px;
 }
 
 /* Bouton fermer */
@@ -644,7 +655,7 @@ hr.solid {
     cursor: pointer;
 }
 
-/* Boutons précédent/suivant */
+/* Navigation */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -659,7 +670,6 @@ hr.solid {
 
 .prev { left: 5px; }
 .next { right: 5px; }
-
 
 
 /*DEMARCHE ARTISTIQUE*/

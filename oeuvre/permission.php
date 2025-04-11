@@ -26,8 +26,8 @@
     <div>
         <img src="../images/art/permission/3.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
         <img src="../images/art/permission/2.webp" alt="Image 2" class="zoom-modal thumbnail img-horiz" onclick="openModal(1)">
-        <img src="../images/art/permission/1.webp" alt="Image 3" class="zoom-modal thumbnail img-verti" onclick="openModal(2)">
-        <img src="../images/art/permission/4.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(3)">
+        <img src="../images/art/permission/1.webp" alt="Image 3" class="zoom-modal thumbnail img-horiz" onclick="openModal(2)">
+        <img src="../images/art/permission/4.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(3)">
     </div>
 
     <section>

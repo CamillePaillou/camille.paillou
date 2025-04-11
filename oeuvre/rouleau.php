@@ -26,12 +26,12 @@
     <div>
         <img src="../images/art/rouleau/1.webp" alt="Départ" class="zoom-modal thumbnail img-horiz" onclick="openModal(0)"> 
         <img src="../images/art/rouleau/2.webp" alt="Image 2" class="zoom-modal thumbnail img-horiz" onclick="openModal(1)">
-        <img src="../images/art/rouleau/3.webp" alt="Image 3" class="zoom-modal thumbnail img-verti" onclick="openModal(2)">
-        <img src="../images/art/rouleau/4.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(3)">
-        <img src="../images/art/rouleau/5.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(4)">
-        <img src="../images/art/rouleau/5.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(5)">
-        <img src="../images/art/rouleau/6.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(6)">
-        <img src="../images/art/rouleau/7.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(7)">
+        <img src="../images/art/rouleau/3.webp" alt="Image 3" class="zoom-modal thumbnail img-horiz" onclick="openModal(2)">
+        <img src="../images/art/rouleau/4.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(3)">
+        <img src="../images/art/rouleau/5.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(4)">
+        <img src="../images/art/rouleau/5.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(5)">
+        <img src="../images/art/rouleau/6.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(6)">
+        <img src="../images/art/rouleau/7.webp" alt="Image 4" class="zoom-modal thumbnail img-horiz" onclick="openModal(7)">
         <img src="../images/art/rouleau/8.webp" alt="Image 4" class="zoom-modal thumbnail img-verti" onclick="openModal(8)">
     </div>
 
