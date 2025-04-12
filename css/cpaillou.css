@@ -100,11 +100,12 @@ hr.solid {
     align-items: start;
 }
 
-.bio-left {
+.bio-left{
     font-family: "Jura", sans-serif;
-    font-size:20px; 
+    font-size:40px; 
     margin: -70px 55px 0px 55px; 
     text-align: justify;
+    line-height:30px; 
 }
 .bio-left a , .bio-right a {
     text-decoration: none;  
@@ -123,13 +124,12 @@ hr.solid {
 .accordion {
     background: white;
     padding: 5px;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    margin: 50px 5px 30px 20px; 
     border: 2px solid black;
     cursor: pointer;
     user-select: none;
     position: relative;
-    width: 450px;
+    width: 600px;
     overflow: hidden;
 }
 
@@ -151,6 +151,7 @@ hr.solid {
     transition: max-height 0.5s ease-in-out;
     text-align:justify; 
     padding: 10px; 
+    line-height: 25px;
 }
 
 .accordion-content a{
@@ -172,13 +173,13 @@ hr.solid {
     top: 140px;
 }
 .tag {
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none; /* Enlève le soulignement */
     font-weight: bold;
     transition: background 0.3s, color 0.3s; /* Animation fluide */
@@ -190,14 +191,15 @@ hr.solid {
     background: white;
     color:black;
     border: 1px solid black;
-    top: 40px;
+    top:-40px; 
+    left: 190px; 
 }
 .tag2 {
     background: white;
     color: black;
     border: 1px solid black;
-    left: 90px;
-    top: 100px;
+    left: 260px;
+    top: 50px;
 }
 /* Effet au survol */
 .tag:hover {
@@ -784,6 +786,7 @@ hr.solid {
 .dem {
     margin: 10px 250px 10px 250px;
     text-align: justify; 
+    line-height: 30px; 
 }
 
 /*NEWS - CV*/ 

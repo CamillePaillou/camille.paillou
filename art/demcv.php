@@ -21,7 +21,6 @@
     </div>
 
     <h2 class="bio">démarche artistique</h2>
-        <h6>version courte</h6>
             <div class="dem">
                 <p>Ma pratique est issue d’un dialogue entre toucher et mémoire, où le contact avec la matière ravive des réminiscences mentales et corporelles. 
                     Le papier mâché et le plastique interrogent la permanence et l’éphémère, la porosité et l’impénétrable. 
