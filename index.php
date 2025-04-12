@@ -23,9 +23,9 @@
     <div class="cp">Camille Paillou</div>
 
   <div class="column left">
-    <img src="images/dev/hana/hana2.PNG" class="slideshow-img" alt="Gauche 1">
-    <img src="images/dev/bapperf/bap7.PNG" class="slideshow-img" alt="Gauche 2">
-    <img src="images/dev/spp/spp2.PNG" class="slideshow-img" alt="Gauche 3">
+    <img src="images/dev/hana/hv.PNG" class="slideshow-img" alt="Gauche 1">
+    <img src="images/dev/bapperf/bapv1.PNG" class="slideshow-img" alt="Gauche 2">
+    <img src="images/dev/spp/sppv.PNG" class="slideshow-img" alt="Gauche 3">
     <a href="dev.php" class="overlay-text" target="_blank">développement web</a>
   </div>
   
