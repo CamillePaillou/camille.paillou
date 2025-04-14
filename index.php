@@ -64,8 +64,7 @@
         </div>
     </div>
 
-    <div>
-        <hr class="hr-contact">
+    <div class="back-contact">
         <h2 class="contact">contact</h2>
         <form class="contact-form">
             <label for="name">Votre nom</label>
