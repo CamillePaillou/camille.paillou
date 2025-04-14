@@ -10,31 +10,21 @@
     <script src="js/accordeon.js" defer></script>
 </head>
 <body>
-    
-
-<!--<header>
-    <script src="js/typing1.js" defer></script>
-    <h1 class="cp"><a href="index.php" id="title1"></a></h1>
-    <hr class="solid">
-</header>-->
-
 
 <section class="split-screen">
-    <div class="cp">Camille Paillou</div>
-
-  <div class="column left">
-    <img src="images/dev/hana/hv.PNG" class="slideshow-img" alt="Gauche 1">
-    <img src="images/dev/bapperf/bapv1.PNG" class="slideshow-img" alt="Gauche 2">
-    <img src="images/dev/spp/sppv.PNG" class="slideshow-img" alt="Gauche 3">
-    <a href="dev.php" class="overlay-text" target="_blank">développement web</a>
-  </div>
-  
-  <div class="column right">
-    <img src="images/art/echine/1.webp" class="slideshow-img" alt="Droite 1">
-    <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Droite 2">
-    <img src="images/art/permission/2.webp" class="slideshow-img" alt="Droite 3">
-    <a href="art.php" class="overlay-text" target="_blank">pratique artistique</a>
-  </div>
+        <div class="column left">
+        <div class="cp">Camille Paillou</div>
+            <img src="images/dev/hana/hv.PNG" class="slideshow-img" alt="Capture d'écran du site d'Hana Martinelli">
+            <img src="images/dev/bapperf/bapv1.PNG" class="slideshow-img" alt="Capture d'écran du site bap.perf">
+            <img src="images/dev/spp/sppv.PNG" class="slideshow-img" alt="Capture d'écran du site Son Papier Pixel">
+            <a href="dev.php" class="overlay-text" target="_blank">développement web</a>
+        </div>
+        <div class="column right">
+            <img src="images/art/echine/1.webp" class="slideshow-img" alt="Photo d'Echine">
+            <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Photo d'une exposition">
+            <img src="images/art/permission/2.webp" class="slideshow-img" alt="Photo de la performance Permission">
+            <a href="art.php" class="overlay-text" target="_blank">pratique artistique</a>
+        </div>
 </section>
 
     <div class="bio-container">
@@ -46,7 +36,7 @@
         </div>
         <div class="bio-column">
             <div class="accordion">
-                    <h4 class="accordion-title">art <span class="arrow">▼</span></h4>
+                <h4 class="accordion-title">art <span class="arrow">▼</span></h4>
                     <div class="accordion-content">
                         <p><strong>formation</strong><br>J’ai d’abord obtenu ma licence aux Beaux-Arts de Tours où je réalisais des performances absurdes et colorés jusqu’en 2022.  A mon arrivée à Paris, j’ai suivi une formation professionnalisante pour apprendre à créer des expositions (<a href="https://beauxartsparis.fr/fr/exposition-simple/sur-le-feu" target="_blank">Sur le Feu,</a>2022)
                         et j’ai intégré l’atelier d’Emmanuelle Huynh (danse) et d’Anne Rochette (sculpture). 
@@ -58,7 +48,6 @@
                         J'anime églalement un atelier de couture dans un FAM qui accueille des personnes en situations de handicap.</p> 
                     </div>
                 </div>
-
                 <div class="accordion">
                     <h4 class="accordion-title">dev <span class="arrow">▼</span></h4>
                     <div class="accordion-content">
@@ -68,15 +57,12 @@
                         </p>
                     </div>
                 </div>
-        </div>
-                
+        </div>  
             <div class="tags-column">
             <a href="dev.php" class="tag tag1 pulsing-border">développement web</a>
             <a href="art.php" class="tag tag2 pulsing-border">pratique artistique</a>
         </div>
-
     </div>
-
 
     <div>
         <hr class="hr-contact">
@@ -96,7 +82,6 @@
     </div>
 
     <?php require_once 'partials/footer.php'; ?>
-
 
 </body>
 </html>
