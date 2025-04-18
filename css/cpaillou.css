@@ -293,7 +293,7 @@ hr.solid {
     margin-top: 60px; 
 }
 .timeline-item img {
-    width: 80px;
+    width: 90px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -347,22 +347,32 @@ hr.solid {
 .hero-img-vertical {
     display: block;
 }
+
 .overlay-name a {
-    position: absolute;
+    position: absolute; 
     top: 40%;
     left: 55%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
     z-index: 1; 
     font-family: "Jura", sans-serif;
     text-decoration: none;
     flex-wrap: wrap; 
+    background: linear-gradient(90deg, #000000, #222222, #eeeeee, #000000);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: subtleShift 5s ease infinite;
+    }
+
+@keyframes subtleShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.overlay-name a:hover {
-    transform: scale(1.1);
-}
+
 .overlay-para {
     position: absolute;
     top: 45%;
@@ -1071,7 +1081,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 20px;
     background-color: #f7f7f7; /* ou la couleur de ton choix */
     flex-wrap: wrap;
     font-family: "Jura", sans-serif;
@@ -1129,7 +1139,48 @@ footer {
 .hero-img-vertical {
     display: none;
 }
+/*page DEV*/ 
 
+.timeline {
+    flex: 0 0 150px; /* largeur fixe */
+    height: 80%;
+    margin-top:65px; 
+}
+.timeline-item img {
+    width: 100px;
+}
+.caption {
+    font-size: 0.9rem;
+}
+.timeline-item.active .caption {
+    font-size:1.2rem; 
+}
+
+.hero-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.overlay-name a {
+    left: 35%;
+    font-size: 5rem;
+}
+.overlay-name a:hover {
+    padding-top: 20px; 
+    text-decoration: 4px wavy underline lavender;
+}
+.overlay-para {
+    top: 50%;
+    left: 15%;
+    font-size: 1rem;
+}
 @media only screen and (min-width: 1024px){ 
 
     .bio-container {
@@ -1228,7 +1279,7 @@ footer {
         animation: borderPulse 1.5s ease-in-out infinite;
     }
     .menu > div { 
-        padding: 20px; 
+        padding: 15px; 
     }
 
 /*page DEV*/ 
@@ -1236,58 +1287,22 @@ footer {
     .timeline {
         flex: 0 0 200px; /* largeur fixe */
         height: 80%;
-        overflow-y: auto;
-        background-color: rgba(230, 230, 250, 0.7);
-        padding: 20px;
         margin-top:65px; 
-    }
-    .timeline-item {
-        text-align: center;
-        cursor: pointer;
-        margin-top: 60px; 
     }
     .timeline-item img {
         width: 150px;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
     }
-    .timeline-item img:hover {
-        transform: scale(1.1);
-    }
-    .timeline-item.active img {
-        transform: scale(1.1);
-      }
-      .caption {
-        font-family: "Jura", sans-serif;
+    .caption {
         font-size: 0.9rem;
-        margin-top: 10px;
-        font-weight: normal;
-        color: black;
-        transition: all 0.3s ease;
     }
-    
     .timeline-item.active .caption {
-        color: white;
-        font-weight: bold;
         font-size:1.2rem; 
-      }
+    }
     
     .hero-container {
         flex: 1;
         position: relative;
         overflow: hidden;
-    }
-    .hero {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-    .hero.active {
-        display: block;
     }
     .hero img {
         width: 100%;
@@ -1295,36 +1310,19 @@ footer {
         object-fit: contain;
         opacity: 0.4;
     }
+    
     .overlay-name a {
-        position: absolute;
-        top: 40%;
         left: 35%;
-        transform: translate(-50%, -50%);
-        color: black;
         font-size: 5rem;
-        font-weight: bold;
-        text-align: center;
-        z-index: 1; 
-        font-family: "Jura", sans-serif;
-        text-decoration: none;
     }
     .overlay-name a:hover {
-        color:lavender; 
-        background-color: white;
-        border-radius:20px; 
-        padding:20px; 
-        border: 2px solid black; 
+        padding-top: 20px; 
+        text-decoration: 4px wavy underline lavender;
     }
-
     .overlay-para {
-        position: absolute;
         top: 50%;
         left: 15%;
-        color: black;
         font-size: 1rem;
-        text-align: left;
-        z-index: 1; 
-        font-family: "Jura", sans-serif;
     }
 }} 
 

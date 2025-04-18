@@ -1,3 +1,138 @@
+ dev 
+ 
+ .titre-dev a {
+    font-family: "Jura", sans-serif;
+    font-size: 7.5vw; 
+    letter-spacing: 1vw;
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none; 
+    color: black; 
+}
+.titre-dev a:hover {
+    color: lavender; 
+}
+
+.layout {
+    display: flex;
+    height: 100%; 
+    width: 100%;
+    margin-top: 10px; 
+}
+.timeline {
+    flex: 0 0 100px; /* largeur fixe */
+    height: 60%;
+    overflow-y: auto;
+    background-color: rgba(230, 230, 250, 0.7);
+    padding: 20px;
+    margin-top:10px; 
+}
+.timeline-item {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 60px; 
+}
+.timeline-item img {
+    width: 90px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.timeline-item img:hover {
+    transform: scale(1.1);
+}
+.timeline-item.active img {
+    transform: scale(1.1);
+}
+
+.caption {
+    font-family: "Jura", sans-serif;
+    font-size: 0.5rem;
+    margin-top: 10px;
+    font-weight: normal;
+    color: black;
+    transition: all 0.3s ease;
+}
+.timeline-item.active .caption {
+    color: white;
+    font-weight: bold;
+    font-size:0.8rem; 
+}
+.hero-container {
+    display: flex;
+    height: auto; 
+}
+.hero {
+    display: none;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.hero.active {
+    display: block;
+}
+.hero img {
+    position: absolute;
+    width: auto;
+    height: 50%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.hero-img-horizontal {
+    display: none;
+}
+.hero-img-vertical {
+    display: block;
+}
+
+.overlay-name a {
+    position: absolute; 
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 1; 
+    font-family: "Jura", sans-serif;
+    text-decoration: none;
+    flex-wrap: wrap; 
+    background: linear-gradient(90deg, #000000, #222222, #eeeeee, #000000);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: subtleShift 5s ease infinite;
+    }
+
+@keyframes subtleShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.overlay-para {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: black;
+    font-size: 0.8rem;
+    text-align: left;
+    z-index: 1; 
+    font-family: "Jura", sans-serif;
+    text-align: justify;
+    margin-right: 30px; 
+    padding: 10px; 
+    font-weight: bold;
+}
+
+ 
+ ////////////////////////////
+ 
  .split-screen {
         display: flex;
         height: 100vh;
