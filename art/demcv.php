@@ -20,7 +20,7 @@
         <div><a href="portfolio.php">portfolio</a></div>
     </div>
 
-    <h2 class="bio">démarche artistique</h2>
+    <h2 class="titre-dem">démarche artistique</h2>
             <div class="dem">
                 <p>Ma pratique est issue d’un dialogue entre toucher et mémoire, où le contact avec la matière ravive des réminiscences mentales et corporelles. 
                     Le papier mâché et le plastique interrogent la permanence et l’éphémère, la porosité et l’impénétrable. 

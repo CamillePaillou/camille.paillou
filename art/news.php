@@ -21,7 +21,7 @@
         <div><a href="portfolio.php">portfolio</a></div>
     </div>
 
-    <h2 class="bio">expériences et cv</h2>
+    <h2 class="titre-dem">expériences et cv</h2>
     
 
     
@@ -33,7 +33,7 @@
             <li class="event">
                 <input type="radio" name="tl-group" checked/>
                 <label></label>
-                <div class="thumb user-1"><span>2022-2025</span></div>
+                <div class="thumb user-1 date"><span>2022-2025</span></div>
                 <div class="content-perspective">
                     <div class="content">
                         <div class="content-inner">
@@ -242,21 +242,21 @@
     <div class="assistanat">
         <h5>Assistanat d'artistes</h5>
         <ul>
-            <li>Qingmei Yao (réalisation de costumes, tournage), février 2023, Paris</li>
-            <li>Slim Cheltout (création de décors d’escape game), avril-mai 2022, Le Mans</li>
-            <li>Peter Briggs (préparation d’une exposition), mai.juillet 2022, Tours et Bruxelles</li>
+            <li>Qingmei Yao (réalisation de costumes, tournage),<br> février 2023, Paris</li>
+            <li>Slim Cheltout (création de décors d’escape game), <br> avril-mai 2022, Le Mans</li>
+            <li>Peter Briggs (préparation d’une exposition), <br> mai.juillet 2022, Tours et Bruxelles</li>
         </ul>
     </div>
 
     <div class="stage">
         <h5>Stages</h5>
         <ul>
-            <li>Chargée de PerformanceSources, oct-nov 2023, Le Générateur, Gentilly</li>
-            <li>MGI (assistanat des intervenants), mars 2023, Paris </li>
-            <li>Stage avec l’association PoSo (poésie sonore), fev 2022, Tours</li> 
-            <li>Stage auprès d’Elodie Larsonneur, art-thérapeute CHRU Bretonneau, mars 2021, Tours</li>
-            <li>Stage à la galerie Olivier Rousseau,  fev 2017 (3 jours), Tours</li>
-            <li>Stage auprès d’une cheffe de projet culturel à la mairie de Chambray-lesTours,  dec 2016 (5 jours), Chambray-les-Tours</li>
+            <li>Chargée de PerformanceSources, <br> oct-nov 2023, Le Générateur, Gentilly</li>
+            <li>MGI (assistanat des intervenants),<br> mars 2023, Paris </li>
+            <li>Stage avec l’association PoSo (poésie sonore), <br> fev 2022, Tours</li> 
+            <li>Stage auprès d’Elodie Larsonneur, art-thérapeute CHRU Bretonneau, <br> mars 2021, Tours</li>
+            <li>Stage à la galerie Olivier Rousseau, <br> fev 2017 (3 jours), Tours</li>
+            <li>Stage auprès d’une cheffe de projet culturel à la mairie de Chambray-lesTours, <br> dec 2016 (5 jours), Chambray-les-Tours</li>
         </ul>
     </div>
 

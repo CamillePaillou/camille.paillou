@@ -304,7 +304,6 @@ hr.solid {
 .timeline-item.active img {
     transform: scale(1.1);
 }
-
 .caption {
     font-family: "Jura", sans-serif;
     font-size: 0.5rem;
@@ -498,9 +497,7 @@ hr.solid {
     color: white;
 }
 
-
 /* Galerie photo works */
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(150, 4%);
@@ -512,7 +509,6 @@ hr.solid {
     overflow-x: auto;
     scroll-snap-type: x mandatory; /* Scroll fluide */
 }
-
 .gallery-item {
     position: relative;
     width: 250px;
@@ -524,7 +520,6 @@ hr.solid {
     width: 80px;
     height: 240px;
 }
-
 /* Images */
 .gallery-item-img {
     width: 100%;
@@ -534,7 +529,6 @@ hr.solid {
     border-radius: 10px;
     transition: transform 0.3s ease-out;
 }
-
 /* Positions personnalisées */
 .pos-1 { --grid-row: 5; --grid-column: 2; }  /*accrochage*/
 .pos-2 { --grid-row: 5; --grid-column: 145; } /*carton*/
@@ -575,16 +569,13 @@ hr.solid {
     opacity: 0;
     transition: opacity 0.3s ease-out;
 }
-
 .gallery-item:hover .gallery-item-info {
     opacity: 1;
 }
-
 /* Effet 3D Smooth */
 .gallery-item:hover {
     transform: scale(1.1);
 }
-
 .gallery-wrapper {
     width: 100vw;
     overflow-x: auto;
@@ -594,41 +585,34 @@ hr.solid {
 
 
 /*PORTFOLIO*/ 
-.colonne-portfolio {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-}
-
 .colonne-portfolio-left img{
-    width:75%; 
-    margin:20px 20px 10px 150px; 
+    width:80%; 
+    margin:5% 10% 2% 10%; 
 }
 .colonne-portfolio-right img {
-    height:20%; 
-    margin:0px 20px 10px 100px; 
+    width:50%;
+    margin:10% 25% 2% 25%; 
 }
-
 .para-portfolio {
     text-align: center;
-    margin-left : 85px; 
+    font-size: 0.9rem; 
 }
-
 .tele, .telev{
     background-color: lavender;
     border: none; 
     padding: 15px; 
-    border-radius: 20px; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; /* <-- centre horizontalement */
+    width: fit-content; /* adapte la taille au contenu */
 }
-.tele{
-    margin: 20px 20px 20px 360px; 
-}
-.telev{
-    margin: 20px 20px 20px 200px; 
-}
+
 .tele a, .telev a {
     text-decoration: none; 
     color: black; 
+    font-size:0.9rem; 
 }
 .tele a:hover, .telev a:hover {
     text-decoration: none; 
@@ -755,10 +739,15 @@ hr.solid {
 
 
 /*DEMARCHE ARTISTIQUE*/
+.titre-dem {
+    margin: 50px; 
+    font-size:1.5rem; 
+}
 .dem {
-    margin: 10px 250px 10px 250px;
+    margin: 5% 15%;
     text-align: justify; 
-    line-height: 30px; 
+    line-height: 25px; 
+    font-size: 1rem; 
 }
 
 /*NEWS - CV*/ 
@@ -775,14 +764,13 @@ hr.solid {
     color: white;
     margin: 0;
     text-align: center;
+    font-size: 0.9rem; 
 }
-
-
 .timeline-art {
 	position: relative;
 	list-style-type: none;
-	padding:50px;
-    margin-left: 100px; 
+	padding:20px;
+    margin-left: 10px; 
 }
 
 /*la barre timeline*/
@@ -805,19 +793,19 @@ hr.solid {
 /*tout le container pour un evenement */
 .event {
 	position: relative;
-	margin-bottom: 80px;
-	padding-right: 40px;
+	margin-bottom: 30px;
+	padding-right: 20px;
 }
 
 /*la photo*/
 .thumb {
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 60px;
+	height: 60px;
 	border: 3px solid black; 
     background-size: cover; /* Ajuste la taille de l'image */
     background-position: center; /* Centre l'image */
-	border-radius: 50%;
+	border-radius: 10px;
 }
 /*la barre de gauche juste après la thumb*/ 
 .thumb:before {
@@ -826,85 +814,83 @@ hr.solid {
 	height: 3px;
 	z-index: -1;
 	background: black;
-	width: 51px;
-	top: 42px;
-	left: 100%;
+	width: 30px;
+	top: 28px;
+	left: 55px;
 	margin-left: 8px;
 }
 
 /*la date*/
 .thumb span {
 	color: black; 
-	width: 100%;
 	text-align: center;
-	font-weight: 700;
-	font-size: 15px;
 	text-transform: uppercase;
 	position: absolute;
-	bottom: -50px;
+	bottom: -40px;
     display: block;  
+    margin-top: 10px; 
 }
 
 /*les photos pour chaque évenement */ 
 .user-1 {
-	background-image: url(/images/cv/bap.webp);
+	background-image: url(../images/cv/bap.webp);
 }
 
 .user-2 {
-	background-image: url(/images/cv/bap.webp);
+	background-image: url(../images/cv/bap.webp);
 }
 
 .user-3 {
-	background-image: url(/images/cv/talm.webp);
+	background-image: url(../images/cv/talm.webp);
 }
 
 .user-4 {
-	background-image: url(/images/cv/eparse.webp);
+	background-image: url(../images/cv/eparse.webp);
 }
 
 .user-5 {
-	background-image: url(/images/cv/dna.webp);
+	background-image: url(../images/cv/dna.webp);
 }
 
 .user-6 {
-	background-image: url(/images/cv/crush.webp);
+	background-image: url(../images/cv/crush.webp);
 }
 
 .user-7 {
-	background-image: url(/images/cv/lost.webp);
+	background-image: url(../images/cv/lost.webp);
 }
 
 .user-8 {
-	background-image: url(/images/cv/surlefeu.webp);
+	background-image: url(../images/cv/surlefeu.webp);
 }
 
 .user-9 {
-	background-image: url(/images/cv/monde.webp);
+	background-image: url(../images/cv/monde.webp);
 }
 
 .user-10 {
-	background-image: url(/images/cv/balzac.webp);
+	background-image: url(../images/cv/balzac.webp);
 }
 
 .user-11 {
-	background-image: url(/images/cv/spp.webp);
+	background-image: url(../images/cv/spp.webp);
 }
 
 .user-12 {
-	background-image: url(/images/cv/brux.webp);
+	background-image: url(../images/cv/brux.webp);
 }
 
 .user-13 {
-	background-image: url(/images/cv/blois.webp);
+	background-image: url(../images/cv/blois.webp);
 }
 
 /*le rond milieu*/
 .event label,
 .event input[type="radio"] {
-	width: 24px;
-	height: 24px;
-	left: 158px;
-	top: 36px;
+	width: 15px;
+	height: 15px;
+	left: 95px;
+	top: 20px;
 	position: absolute;
 	display: block;; 
 }
@@ -922,12 +908,9 @@ hr.solid {
     border: 2px solid black; 
     border-radius: 50%;
     color: black;
-    font-size: 26px;
+    font-size: 15px;
     height: 100%;
     width: 100%;
-    left: -2px;
-    top: -3px;
-    line-height: 24px;
     position: absolute;
     text-align: center;
     padding: 5px; 
@@ -945,16 +928,16 @@ hr.solid {
 
 /*container pour evement*/
 .content-perspective {
-	margin-left: 230px;
+	margin-left: 150px;
 	position: relative;
 	perspective: 600px;
 }
 /*barre entre input radio et container titre*/ 
 .content-perspective:before {
 	content: '';
-	width: 37px;
-	left: -39px;
-	top: 42px;
+	width: 28px;
+	left: -28px;
+	top: 32px;
 	position: absolute;
 	height: 3px;
 	z-index: -1;
@@ -1004,9 +987,12 @@ hr.solid {
 
 /*effet transition quand sélectionne*/ 
 .thumb,
-.thumb span,
 .content-inner h3 {
 	transition: all 0.6s ease-in-out 0.2s;
+    font-size: 1rem;
+}
+.thumb span {
+    font-size:0.7rem; 
 }
 .content-inner {
 	transition: box-shadow 0.8s linear 0.2s;
@@ -1016,6 +1002,7 @@ hr.solid {
 }
 .content-inner p {
 	transition: max-height 0.5s linear, color 0.3s linear;
+    font-size: 0.8rem;
 }
 
 /*couleur bouton radio checked*/
@@ -1025,12 +1012,17 @@ hr.solid {
     border-color: lavender;
     box-shadow: 0 0 15px 5px rgba(230, 230, 250, 0.8);
     transition: box-shadow 0.3s ease-in-out;
+    left: 2px;
+	top: 10px;
 }
 
 /*conteneur droite titre p*/
 /*barre droite label - content*/
 .event input[type="radio"]:checked ~ .content-perspective:before {
 	background: lavender;
+    left: -25px;
+	top: 42px;
+    width:25px;  
 }
 /*couleur du container titre p*/
 .event input[type="radio"]:checked ~ .content-perspective .content {
@@ -1060,7 +1052,8 @@ hr.solid {
 }
 .event input[type="radio"]:checked ~ .thumb span {
     font-weight: bold; 
-    font-size: 18px; 
+    font-size: 0.9rem; 
+    bottom:-50px; 
 }
 .event input[type="radio"]:checked ~ .thumb:before {
 	background: lavender; 
@@ -1068,7 +1061,9 @@ hr.solid {
     top:38px; 
 }
 .assistanat, .stage {
-    margin: 20px 10px 50px 100px; 
+    margin: 5% 10%; 
+    font-size:0.9rem; 
+    line-height: 25px; 
 }
 
 /*FOOTER*/ 
@@ -1204,7 +1199,39 @@ footer {
         width: 90px;
         height: 270px;
       }
+
+/*demarche art*/ 
+    .titre-dem {
+        margin-left: 50px; 
+        font-size:2rem; 
+    }
+    .dem {
+        margin: 5% 15%;
+        text-align: justify; 
+        line-height: 30px; 
+        font-size: 1rem; 
+    }
     
+    /*PORTFOLIO*/ 
+    .colonne-portfolio {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+    }
+    .colonne-portfolio-left img{
+        width:80%; 
+        margin:12% 10% 2% 10%; 
+    }
+    .colonne-portfolio-right img {
+        width:50%;
+        margin:0% 25% 2% 25%; 
+    }
+    .para-portfolio {
+        font-size:1rem; 
+    }
+    .tele a, .telev a {
+       font-size: 1rem; 
+    }
 }
 
 @media only screen and (min-width: 1024px){ 
@@ -1278,7 +1305,111 @@ footer {
         grid-template-columns: repeat(120, 2.5%);
         grid-template-rows: repeat(30, 2%);
       }
-    
+     
+/*NEWS - CV*/ 
+
+.section-news h3 {
+    font-size: 1rem; 
+}
+.timeline-art {
+	padding:50px;
+    margin-left: 50px; 
+}
+
+/*tout le container pour un evenement */
+.event {
+	position: relative;
+	margin-bottom: 80px;
+	padding-right: 40px;
+}
+
+/*la photo*/
+.thumb {
+	position: absolute;
+	width:90px;
+	height:90px;
+}
+/*la barre de gauche juste après la thumb*/ 
+.thumb:before {
+	width: 55px;
+	top: 42px;
+	left: 100%;
+}
+
+/*la date*/
+.thumb span {
+	color: black; 
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: -40px;
+    display: block;  
+    margin-top: 10px; 
+}
+
+/*le rond milieu*/
+.event label,
+.event input[type="radio"] {
+	width: 24px;
+	height: 24px;
+	left: 158px;
+	top: 36px;
+	position: absolute;
+	display: block;; 
+}
+/*la croix*/ 
+.event label:after {
+    font-size: 26px;
+    left: -2px;
+    top: -3px;
+    line-height: 24px;
+}
+
+/*container pour evement*/
+.content-perspective {
+	margin-left: 230px;
+}
+/*barre entre input radio et container titre*/ 
+.content-perspective:before {
+	content: '';
+	width: 37px;
+	left: -39px;
+	top: 42px;
+}
+
+/*effet transition quand sélectionne*/ 
+.thumb,
+.content-inner h3 {
+    font-size: 1.3rem;
+}
+.thumb span {
+    font-size:0.9rem; 
+}
+.content-inner p {
+	transition: max-height 0.5s linear, color 0.3s linear;
+    font-size: 0.9rem;
+}
+
+/*couleur bouton radio checked*/
+.event input[type="radio"]:checked + label:after {
+    left: 0px;
+	top:0px;
+}
+
+/*conteneur droite titre p*/
+/*barre droite label - content*/
+.event input[type="radio"]:checked ~ .content-perspective:before {
+	background: lavender;
+    left: -40px; 
+	top: 42px;
+    width:40px; 
+}
+
+.event input[type="radio"]:checked ~ .thumb span {
+    font-size: 1rem; 
+    bottom:-50px; 
+}
+
 }
     
 @media only screen and (min-width: 1200px){
@@ -1433,6 +1564,16 @@ footer {
     .gallery {
         grid-template-columns: repeat(155, 2%);
         grid-template-rows: repeat(30, 2%);
+    }
+
+    /*portfolio*/ 
+    .colonne-portfolio-left img{
+        width:80%; 
+        margin:13% 10% 2% 10%; 
+    }
+    .colonne-portfolio-right img {
+        width:50%;
+        margin:0% 25% 2% 25%; 
     }
 }
 

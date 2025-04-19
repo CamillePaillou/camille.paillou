@@ -20,7 +20,7 @@
         <div><a href="news.php">expériences et cv</a></div>
     </div>
 
-    <h2 class="bio">portfolio</h2>
+    <h2 class="titre-dem">portfolio</h2>
         <div class="colonne-portfolio">
             <div class="colonne-portfolio-left">
                 <img src="portfolioh.jpg">
