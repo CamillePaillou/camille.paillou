@@ -623,10 +623,10 @@ hr.solid {
 /*PAGE WORK*/
 .art-p {
     display: block;
-    margin: 100px 20px 50px 250px;
+    margin: 10%;
 }
 .art-p p{
-    font-size: 15px; 
+    font-size: 0.9rem; 
 }
 
 /* Miniature avec effet de zoom au survol */
@@ -643,7 +643,7 @@ hr.solid {
 
 /* Miniature horizontale */
 .img-horiz {
-    width: 900px;
+    width: 400px;
     height: auto;
     max-width: 900px;
     display: block;
@@ -653,7 +653,7 @@ hr.solid {
 /* Miniature verticale */
 .img-verti {
     width: auto;
-    height: 600px;
+    height: 400px;
     max-width: 600px;
     display: block;
     margin: 30px auto;
@@ -1232,6 +1232,28 @@ footer {
     .tele a, .telev a {
        font-size: 1rem; 
     }
+
+    .timeline-art {
+        padding:50px;
+        margin-left: 20px; 
+    }
+    /*tout le container pour un evenement */
+    .event {
+        margin-bottom: 80px;
+        padding-right: 40px;
+    }
+
+    /*PAGE WORK*/
+/* Miniature horizontale */
+.img-horiz {
+    width: 600px;
+}
+
+/* Miniature verticale */
+.img-verti {
+    height: 500px;
+}
+
 }
 
 @media only screen and (min-width: 1024px){ 
@@ -1399,6 +1421,19 @@ footer {
     bottom:-50px; 
 }
 
+/*PAGE WORK*/
+/* Miniature horizontale */
+.img-horiz {
+    width: 800px;
+}
+
+/* Miniature verticale */
+.img-verti {
+    height: 600px;
+}
+
+
+
 }
     
 @media only screen and (min-width: 1200px){
@@ -1564,5 +1599,11 @@ footer {
         width:50%;
         margin:0% 25% 2% 25%; 
     }
+
+/*PAGE WORK*/
+/* Miniature horizontale */
+    .img-horiz {
+        width: 900px;
+}
 }
 

@@ -19,7 +19,7 @@
 
     <div class="dev-container">
         <div class="flecheprev-dev"><a href="paysage.php">&larr;</a></div>
-        <div class="titre-site">Départ</div>
+        <div class="titre-site">Vague</div>
         <div class="flechesuiv-dev"><a href="carton.php">&rarr;</a></div>
     </div>
 
