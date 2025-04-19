@@ -1315,10 +1315,8 @@ footer {
 	padding:50px;
     margin-left: 50px; 
 }
-
 /*tout le container pour un evenement */
 .event {
-	position: relative;
 	margin-bottom: 80px;
 	padding-right: 40px;
 }
@@ -1326,36 +1324,27 @@ footer {
 /*la photo*/
 .thumb {
 	position: absolute;
-	width:90px;
-	height:90px;
+	width:80px;
+	height:80px;
 }
 /*la barre de gauche juste après la thumb*/ 
 .thumb:before {
 	width: 55px;
 	top: 42px;
-	left: 100%;
+	left: 72px;
 }
-
 /*la date*/
 .thumb span {
-	color: black; 
-	text-align: center;
-	text-transform: uppercase;
-	position: absolute;
-	bottom: -40px;
-    display: block;  
+	bottom: -40px; 
     margin-top: 10px; 
 }
-
 /*le rond milieu*/
 .event label,
 .event input[type="radio"] {
 	width: 24px;
 	height: 24px;
-	left: 158px;
+	left: 140px;
 	top: 36px;
-	position: absolute;
-	display: block;; 
 }
 /*la croix*/ 
 .event label:after {
@@ -1372,9 +1361,9 @@ footer {
 /*barre entre input radio et container titre*/ 
 .content-perspective:before {
 	content: '';
-	width: 37px;
-	left: -39px;
-	top: 42px;
+	width: 55px;
+	left: -56px;
+	top: 45px;
 }
 
 /*effet transition quand sélectionne*/ 
