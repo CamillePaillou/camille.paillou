@@ -239,6 +239,7 @@ hr.solid {
     align-items: center;
     border: 1px solid black; 
     font-family: "Jura", sans-serif;
+    font-size: 0.8rem; 
     padding:10px; 
     margin-right :20px; 
     border-radius: 20px;
@@ -396,7 +397,7 @@ hr.solid {
     align-items: center;
     width: 100vw;
     position: relative;
-    padding: 10px 20px;
+    padding: 30px 10px;
 }
 .flecheprev-dev, .flechesuiv-dev {
     font-size: 40px; /* Agrandit les flèches */
@@ -410,7 +411,7 @@ hr.solid {
     left: 30px; 
 }
 .flechesuiv-dev  {
-    right:80px; 
+    right:50px; 
 }
 .flecheprev-dev  a, .flechesuiv-dev  a {
     text-decoration: none; 
@@ -421,7 +422,7 @@ hr.solid {
     color: lavender; 
 }
 .titre-site {
-    font-size: 24px;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
     flex: 1;
@@ -435,18 +436,18 @@ hr.solid {
 .titre-site a:hover {
     color:lavender; 
 }
-.colonne-dev {
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
 
 .dev-image img{
-    width:900px; 
-    margin: 30px 10px 10px 50px; 
+    width:90%; 
+    margin: 20px 20px; 
+}
+.legende-dev {
+    font-size: 0.6rem; 
+    margin-left: 30px; 
 }
 .dev-p {
-    font-size:14px; 
-    margin: 30px 50px 10px 10px; 
+    font-size:0.9rem; 
+    margin: 50px; 
     text-align: justify;
 }
 .dev-p a{
@@ -457,10 +458,9 @@ hr.solid {
 
 /*page PRATIQUE ARTISTIQUE*/ 
 .titre-art a {
-    letter-spacing: 25px;
+    font-size: 7.5vw; 
+    letter-spacing: 1vw;
     font-family: "Jura", sans-serif;
-    font-weight: 800;
-    font-size: 100px; 
     display: inline-block; /* Permet d'écrire de gauche à droite */
     text-align: left; /* Alignement à gauche */
     white-space: nowrap;
@@ -473,12 +473,10 @@ hr.solid {
     color: lavender; 
 }
 .menu-art {
-    font-size:15px; 
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px; 
+    font-size:0.6rem; 
+    width: 30%; 
+    margin: 20px 10px; 
 }
-
 .menu-art > div {
     justify-content:start;
     align-items: center;
@@ -505,8 +503,8 @@ hr.solid {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(155, 2%);
-    grid-template-rows: repeat(30, 2%);
+    grid-template-columns: repeat(150, 4%);
+    grid-template-rows: repeat(30, 1.5%);
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -517,14 +515,14 @@ hr.solid {
 
 .gallery-item {
     position: relative;
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 180px;
     will-change: transform;
     transition: transform 0.3s ease-out;
 }
 .vertical {
-    width: 100px;
-    height: 300px;
+    width: 80px;
+    height: 240px;
 }
 
 /* Images */
@@ -545,7 +543,7 @@ hr.solid {
 .pos-5 { --grid-row: 28; --grid-column: 3; } /*dent*/
 .pos-6 { --grid-row: 25; --grid-column: 43; }  /*echine*/
 .pos-7 { --grid-row: 3; --grid-column: 105; }  /*emprise*/
-.pos-8 { --grid-row: 16; --grid-column: 135; } /*facette*/
+.pos-8 { --grid-row: 25; --grid-column: 148; } /*facette*/
 .pos-9 { --grid-row: 3; --grid-column: 55; } /*fusil*/
 .pos-10 { --grid-row: 30; --grid-column: 98; } /*lit*/ 
 .pos-11 { --grid-row: 27; --grid-column: 118; } /*memoire*/
@@ -563,7 +561,7 @@ hr.solid {
 
 .gallery-item-info {
     position: absolute;
-    width: 300px;
+    width: 90%;
     height: 90px;
     bottom: 10px;
     left: 50%;
@@ -1116,71 +1114,99 @@ footer {
 
 @media only screen and (min-width: 769px){
     
-.split-screen {
-    flex-direction : row; 
-    height: 100vh; 
-    width: 100%; 
-}
-      
-.column {
-    height: 100vh; 
-}
+    .split-screen {
+        flex-direction : row; 
+        height: 100vh; 
+        width: 100%; 
+    }
+    .column {
+        height: 100vh; 
+    }
+    .cp {
+        font-size: 1.5em; 
+    }
+    .contact-form {
+        max-width: 600px;
+    }
+    .hero-img-horizontal {
+        display: block;
+    }
 
-.cp {
-    font-size: 1.5em; 
-}
-.contact-form {
-    max-width: 600px;
-}
-.hero-img-horizontal {
-    display: block;
-}
-
-.hero-img-vertical {
-    display: none;
-}
+    .hero-img-vertical {
+        display: none;
+    }
 /*page DEV*/ 
 
-.timeline {
-    flex: 0 0 150px; /* largeur fixe */
-    height: 80%;
-    margin-top:65px; 
-}
-.timeline-item img {
-    width: 100px;
-}
-.caption {
-    font-size: 0.9rem;
-}
-.timeline-item.active .caption {
-    font-size:1.2rem; 
+    .timeline {
+        flex: 0 0 150px; /* largeur fixe */
+        height: 80%;
+        margin-top:65px; 
+    }
+    .timeline-item img {
+        width: 120px;
+    }
+    .caption {
+        font-size: 0.7rem;
+    }
+    .timeline-item.active .caption {
+        font-size:1rem; 
+    }
+    .hero-container {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0.4;
+    }
+    .overlay-name a {
+        left: 35%;
+        font-size: 3rem;
+    }
+    .overlay-para {
+        top: 50%;
+        left: 10%;
+        font-size: 0.9rem;
+        padding-right: 150px; 
+    }
+    /*page dev*/
+    .dev-p {
+        font-size:0.9rem; 
+        margin: 70px 100px; 
+        text-align: justify;
+    }
+    .dev-image img{
+        width:90%; 
+        margin: 20px 50px; 
+    }
+    
+    /*page pratique art*/ 
+    .menu-art {
+        font-size:0.7rem; 
+    }
+    .menu-art > div {
+        margin-left: 15px;
+    }
+    .gallery {
+        grid-template-columns: repeat(120, 3.5%);
+        grid-template-rows: repeat(30, 2%);
+      }
+    
+      .gallery-item {
+        width: 300px;
+        height: 220px;
+      }
+    
+      .vertical {
+        width: 90px;
+        height: 270px;
+      }
+    
 }
 
-.hero-container {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 0.4;
-}
-
-.overlay-name a {
-    left: 35%;
-    font-size: 5rem;
-}
-.overlay-name a:hover {
-    padding-top: 20px; 
-    text-decoration: 4px wavy underline lavender;
-}
-.overlay-para {
-    top: 50%;
-    left: 15%;
-    font-size: 1rem;
-}
 @media only screen and (min-width: 1024px){ 
 
     .bio-container {
@@ -1202,6 +1228,10 @@ footer {
     .contact-form {
         max-width: 800px;
     }
+    .menu > div { 
+        padding: 15px;
+        font-size: 0.9;  
+    }
 
     .fdessous {
         font-size: 0.8rem;
@@ -1209,6 +1239,46 @@ footer {
     .fdroite {
         font-size: 0.6rem; 
     }
+    /*page détail dev*/ 
+/* Conteneur du titre avec flèches */
+    .dev-container {
+        padding: 10px 20px;
+    }
+    .flechesuiv-dev  {
+        right:80px; 
+    }
+    .titre-site {
+        font-size: 2rem;
+    }
+    .colonne-dev {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .dev-image img{
+        width:100%; 
+        margin: 30px 10px 10px 20px; 
+    }
+    .legende-dev {
+        font-size: 0.7rem; 
+    }
+    .dev-p {
+        font-size:0.9rem; 
+        margin: 30px 50px; 
+        text-align: justify;
+    }
+
+    /*page pratique art*/ 
+    .menu-art {
+        font-size:0.8rem; 
+    }
+    .menu-art > div {
+        margin-left: 15px;
+    }
+    .gallery {
+        grid-template-columns: repeat(120, 2.5%);
+        grid-template-rows: repeat(30, 2%);
+      }
+    
 }
     
 @media only screen and (min-width: 1200px){
@@ -1279,7 +1349,8 @@ footer {
         animation: borderPulse 1.5s ease-in-out infinite;
     }
     .menu > div { 
-        padding: 15px; 
+        padding: 15px;
+        font-size: 1rem;  
     }
 
 /*page DEV*/ 
@@ -1324,5 +1395,44 @@ footer {
         left: 15%;
         font-size: 1rem;
     }
-}} 
+
+/*page détail dev*/ 
+/* Conteneur du titre avec flèches */
+    .dev-container {
+        padding: 10px 20px;
+    }
+    .flechesuiv-dev  {
+        right:80px; 
+    }
+    .titre-site {
+        font-size: 2.5rem;
+    }
+    .colonne-dev {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+    .dev-image img{
+        width:100%; 
+        margin: 30px 10px 10px 20px; 
+    }
+    .legende-dev {
+        font-size: 0.7rem; 
+    }
+    .dev-p {
+        font-size:0.9rem; 
+        margin: 30px 50px; 
+        text-align: justify;
+    }
+
+/*page PRATIQUE ARTISTIQUE*/ 
+    .menu-art {
+        font-size:0.8rem; 
+        display: flex;
+        justify-content: flex-start;
+    }
+    .gallery {
+        grid-template-columns: repeat(155, 2%);
+        grid-template-rows: repeat(30, 2%);
+    }
+}
 

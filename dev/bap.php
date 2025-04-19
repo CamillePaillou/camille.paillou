@@ -24,24 +24,25 @@
         <div class="dev-image">
             <figure>
                 <img src="../images/dev/bapperf/bap4.PNG"> 
-                <figcaption>Capture d'écran de la page d'accueil</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page d'accueil</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/bapperf/bap5.PNG"> 
-                <figcaption>Capture d'écran de la suite de la page d'accueil</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la suite de la page d'accueil</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/bapperf/bap2.jpeg">
-                <figcaption>Capture d'écran de la page Oeuvres</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Oeuvres</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/bapperf/bap6.PNG">
-                <figcaption>Capture d'écran de la page présentant le travail de Sara Noun</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page présentant le travail de Sara Noun</figcaption>
             </figure>
         </div>
         <div class="dev-p">
             <p><strong>présentation du site</strong></p>
-            <p>BAP.PERF soutient la performance en archivant et diffusant les créations des étudiant.es et d’artistes sortis de l’Ecole Nationale Supérieure des Beaux-Arts de Paris. Ce site est un cas d’étude vivant et dynamique car les œuvres enregistrées, exclusivement des performances, ont été réalisées durant les années d’études des artistes. En témoignant des créations actuelles et anciennes, ce site visibilise le travail de plusieurs générations et est un outil de médiation voué à la compréhension de la performance en s’adressant à tous (grand public, artistes, institutions).
+            <p>BAP.PERF soutient la performance en archivant et diffusant les créations des étudiant.es et d’artistes sortis de l’Ecole Nationale Supérieure des Beaux-Arts de Paris. Ce site est un cas d’étude vivant et dynamique car les œuvres enregistrées, exclusivement des performances, ont été réalisées durant les années d’études des artistes.
+               <br>En témoignant des créations actuelles et anciennes, ce site visibilise le travail de plusieurs générations et est un outil de médiation voué à la compréhension de la performance en s’adressant à tous (grand public, artistes, institutions).
                <br>Cette plateforme est pour les artistes, un espace de visibilité, une archive et une sorte de réseau social. Il permet éventuellement, nous l'espérons, d’échanger des contacts et de créer des opportunités professionnelles.
             </p>
             <br><p><strong>programmation</strong></p>

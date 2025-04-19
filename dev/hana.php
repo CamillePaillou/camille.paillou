@@ -24,15 +24,15 @@
         <div class="dev-image">
             <figure>
                 <img src="../images/dev/hana/hanam.PNG"> 
-                <figcaption>Capture d'écran de la page d'accueil</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page d'accueil</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/hana/hana2.PNG"> 
-                <figcaption>Capture d'écran de la page Works</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Works</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/hana/hana3.PNG">
-                <figcaption>Capture d'écran de la page News</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page News</figcaption>
             </figure>
         </div>
         <div class="dev-p">

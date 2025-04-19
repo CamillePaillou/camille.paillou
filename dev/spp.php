@@ -24,27 +24,27 @@
         <div class="dev-image">
             <figure>
                 <img src="../images/dev/spp/spp.png"> 
-                <figcaption>Capture d'écran de la page d'accueil</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page d'accueil</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/spp/spp2.PNG"> 
-                <figcaption>Capture d'écran de la page Documentation</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Documentation</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/spp/spp3.PNG">
-                <figcaption>Capture d'écran de la page Documentation - archive audio</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Documentation - archive audio</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/spp/spp4.PNG">
-                <figcaption>Capture d'écran de la page Documentation - workshop à la Villette Makerz</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Documentation - workshop à la Villette Makerz</figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/spp/spp5.PNG">
-                <figcaption>Capture d'écran de la page Photos - workshop à la Villette Makerz </figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page Photos - workshop à la Villette Makerz </figcaption>
             </figure>
             <figure>
                 <img src="../images/dev/spp/spp6.PNG">
-                <figcaption>Capture d'écran de la page A propos</figcaption>
+                <figcaption class="legende-dev">Capture d'écran de la page A propos</figcaption>
             </figure>
         </div>
         <div class="dev-p">
