@@ -118,6 +118,32 @@ hr.solid {
     font-weight: bold;
 }
 
+.tele-cv{
+    background-color: lavender;
+    border: none; 
+    padding: 15px; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px 10px 35px; 
+    width: fit-content; 
+}
+.tele-cv a {
+    text-decoration: none; 
+    color: black; 
+    font-size:1rem; 
+}
+.tele-cv:hover {
+    transform: scale(1.1);
+}
+.tele-cv a:hover {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;
+}
+
+
 /*accordéon pour détail*/ 
 .accordion {
     background: white;
@@ -129,7 +155,6 @@ hr.solid {
     position: relative;
     overflow: hidden;
 }
-
 .accordion-title {
     display: flex;
     justify-content: space-between;
@@ -137,11 +162,9 @@ hr.solid {
     font-size:1.5rem; 
     padding: 5px;
 }
-
 .arrow {
     transition: transform 0.3s;
 }
-
 .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -151,7 +174,6 @@ hr.solid {
     font-size:1rem; 
     line-height:1.8rem; 
 }
-
 .accordion-content a{
  text-decoration: none; 
  color: grey; 
@@ -159,7 +181,6 @@ hr.solid {
 .accordion.active .accordion-content {
     max-height: 1500px; /* assez grand pour le contenu */
 }
-
 .accordion.active .arrow {
     transform: rotate(180deg);
 }
@@ -279,6 +300,15 @@ hr.solid {
 
 .menu-merci > div:hover a {
     color: white;
+}
+.img-cv{
+    display: flex; 
+    justify-content: center; 
+    margin:10px auto 20px auto; 
+    width: 50%; 
+}
+.titre-cv {
+    justify-content: center;
 }
 
 /*MENU*/ 
@@ -1264,7 +1294,16 @@ footer {
         line-height: 30px; 
         font-size: 1rem; 
     }
-    
+    /*cv*/
+    .img-cv{
+        display: flex; 
+        justify-content: center; 
+        margin:10px auto 20px auto; 
+        width: 30%; 
+    }
+    .titre-cv {
+        justify-content: center;
+    }
     /*PORTFOLIO*/ 
     .colonne-portfolio {
         display: grid;
@@ -1336,7 +1375,7 @@ footer {
         font-size: 1rem; 
         padding: 10px; 
     }
-    
+
 /*footer*/ 
     .fdessous {
         font-size: 0.8rem;
@@ -1499,13 +1538,17 @@ footer {
     .bio {
         margin-left:50px; 
         font-size:80px; 
+        margin-top: 0px; 
     }
     .bio-container {
         grid-template-columns: 50% 50% 30%;
         max-width: 1000px;
     }
     .bio-left{
-        margin: -70px 55px 0px 55px; 
+        margin: -70px 30px 0px 55px; 
+    }
+    .tele-cv {
+        margin-left: 50px; 
     }
     .accordion {
         width: 110%;

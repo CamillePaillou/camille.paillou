@@ -42,6 +42,7 @@
             <p class="bio-left">Je m'appelle Camille Paillou. Je suis en dernière année de master aux Beaux-Arts de Paris et j’apprends en parallèle le développement web. 
                 <strong>Je recherche pour la rentrée 2025, une entreprise pour réaliser une alternance et devenir développeuse web.</strong> Je vous détaille mes projets et mon parcours dans les accordéons. 
             </p>
+            <button class="tele-cv pulsing-border-cv"><a href="cv.pdf" target="_blank">Télécharger mon cv</a></button>
         </div>
         <div class="bio-column">
             <div class="accordion">
