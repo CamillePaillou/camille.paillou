@@ -23,8 +23,6 @@
 
     <h2 class="titre-dem">expériences et cv</h2>
     
-
-    
 <!--FORMATION-->
 <!--dnsep-->
     <div>

@@ -155,7 +155,6 @@
                 <span class="gallery-item-date">2024</span>
             </div>
         </div>
-    
     </div>
 
     <?php require_once 'partials/footer.php'; ?>

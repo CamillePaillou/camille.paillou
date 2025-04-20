@@ -26,19 +26,19 @@
 
     <div class="div-cv">
     <h2 class="titre-dem">cv</h2>
-        <img class="img-cv" src="cv.png>
+        <img class="img-cv" src="cv.png" alt="cv">
         <button class="tele"><a href="cv.pdf" target="_blank">Télécharger mon cv</a></button>
     </div> 
 
     <h2 class="titre-dem">portfolio</h2>
             <div class="colonne-portfolio">
                 <div class="colonne-portfolio-left">
-                    <img src="art/portfolioh.jpg">
+                    <img src="art/portfolioh.jpg" alt="couverture portfolio">
                     <p class="para-portfolio"><strong>Portfolio 2024-2025</strong> <br>(format horizontal)</p>
                     <button class="tele"><a href="art/portfolioHorizontal.pdf" target="_blank">Télécharger</a></button>
                 </div>
                 <div class="colonne-portfolio-right">
-                    <img src="art/portfoliov.jpg">
+                    <img src="art/portfoliov.jpg" alt="couverture portfolio">
                     <p class="para-portfolio"><strong>Portfolio 2024-2025</strong><br> version courte (format vertical)</p>
                     <button class="telev"><a href="art/portfolioVertical.pdf" target="_blank">Télécharger</a></button>
                 </div>
