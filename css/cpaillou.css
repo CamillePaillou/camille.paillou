@@ -229,6 +229,58 @@ hr.solid {
     border: 2px solid white; 
 }
 
+/*PAGE MERCI*/ 
+.titre-cp a {
+    font-family: "Jura", sans-serif;
+    font-size: 4.5vw; 
+    letter-spacing: 4vw;
+    display: inline-block; /* Permet d'écrire de gauche à droite */
+    text-align: left; /* Alignement à gauche */
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none; 
+    color: black; 
+    padding-left: 20px; 
+}
+.titre-cp a:hover {
+    color: lavender; 
+}
+.merci {
+    padding: 20px 20px;
+    text-align:center;  
+    border: 2px dashed black; 
+    margin: 40px 20px; 
+}
+
+/*menu merci*/
+.menu-merci {
+    display: flex;
+    margin-top: 30px; 
+    justify-content:center; 
+}
+.menu-merci > div {
+    align-items: center;
+    border: 1px solid black; 
+    font-family: "Jura", sans-serif;
+    font-size: 0.8rem; 
+    padding:8px; 
+    margin: 10px 10px; 
+    border-radius: 20px;
+}
+.menu-merci a {
+    text-decoration: none; 
+    color:black;
+    transition: color 0.3s; 
+    align-items: center;
+}
+.menu-merci > div:hover {
+    background: black;
+}
+
+.menu-merci > div:hover a {
+    color: white;
+}
+
 /*MENU*/ 
 .menu {
     display: flex;
@@ -257,18 +309,18 @@ hr.solid {
     color: white;
 }
 
-
 /*Page DEVELOPPEMENT WEB */ 
 .titre-dev a {
     font-family: "Jura", sans-serif;
-    font-size: 7.5vw; 
-    letter-spacing: 1vw;
+    font-size: 4.5vw; 
+    letter-spacing: 3vw;
     display: inline-block; /* Permet d'écrire de gauche à droite */
     text-align: left; /* Alignement à gauche */
     white-space: nowrap;
     overflow: hidden;
     text-decoration: none; 
     color: black; 
+    padding-left: 20px; 
 }
 .titre-dev a:hover {
     color: lavender; 
@@ -457,8 +509,8 @@ hr.solid {
 
 /*page PRATIQUE ARTISTIQUE*/ 
 .titre-art a {
-    font-size: 7.5vw; 
-    letter-spacing: 1vw;
+    font-size: 4.5vw; 
+    letter-spacing: 2.5vw;
     font-family: "Jura", sans-serif;
     display: inline-block; /* Permet d'écrire de gauche à droite */
     text-align: left; /* Alignement à gauche */
@@ -467,6 +519,7 @@ hr.solid {
     margin-top:0px; 
     text-decoration: none; 
     color: black; 
+    padding-left: 20px; 
 }
 .titre-art a:hover {
     color: lavender; 
@@ -1277,18 +1330,22 @@ footer {
     .contact-form {
         max-width: 800px;
     }
-    .menu > div { 
-        padding: 15px;
-        font-size: 0.9;  
-    }
 
+/*menu merci*/
+    .menu-merci > div {
+        font-size: 1rem; 
+        padding: 10px; 
+    }
+    
+/*footer*/ 
     .fdessous {
         font-size: 0.8rem;
     }
     .fdroite {
         font-size: 0.6rem; 
     }
-    /*page détail dev*/ 
+
+/*page détail dev*/ 
 /* Conteneur du titre avec flèches */
     .dev-container {
         padding: 10px 20px;

@@ -8,6 +8,15 @@
     <link rel="stylesheet" href=".//css/normalize.css" />
     <script src="js/photoindex.js" defer></script>
     <script src="js/accordeon.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "KaOBj1ci0xcG-JCN2",
+            });
+        })();
+    </script>
+        <script src="js/contact.js" defer></script>
 </head>
 <body>
 
@@ -66,15 +75,18 @@
 
     <div class="back-contact">
         <h2 class="contact">contact</h2>
-        <form class="contact-form">
+        <form id="frmContact" class="contact-form" novalidate>
             <label for="name">Votre nom</label>
-            <textarea id="name" name="name" rows="1" placeholder="Entrez votre nom..."></textarea>
+            <textarea type="text" id="name" name="name" rows="1" required autofocus placeholder="Entrez votre nom..."></textarea>
         
             <label for="email">Votre email</label>
-            <textarea id="email" name="email" rows="1" placeholder="Entrez votre email..."></textarea>
+            <textarea type="email" id="email" name="email" rows="1" required placeholder="Entrez votre email..."></textarea>
+        
+            <label for="message">Votre sujet</label>
+            <textarea type="text" id="subject" name="subject" rows="2" required placeholder="Votre sujet..."></textarea>
         
             <label for="message">Votre message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+            <textarea type="text" id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
         
             <button type="submit">Envoyer</button>
           </form>
@@ -84,3 +96,5 @@
 
 </body>
 </html>
+
+
