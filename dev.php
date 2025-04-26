@@ -36,7 +36,7 @@
 
         <div class="hero-container"> 
             <div class="hero" data-id="1">
-                <h1 class="overlay-name"><a href="/../camille.paillou/dev/hana.php">Hana Martinelli</a></h1>
+                <h1 class="overlay-name"><a href="/../dev/hana.php">Hana Martinelli</a></h1>
                 <p class="overlay-para">Site vitrine pour une sculptrice.</p>
                 <!--image vertical--> 
                 <img class="hero-img hero-img-vertical" src="images/dev/hana/hv.PNG" alt="Capture d'écran du site d'Hana Martinelli">
@@ -44,7 +44,7 @@
                 <img class="hero-img hero-img-horizontal" src="images/dev/hana/hanam.PNG" alt="Capture d'écran du site d'Hana Martinelli">
             </div>
             <div class="hero" data-id="2">
-                <h1 class="overlay-name"><a href="/../camille.paillou/dev/spp.php">Son Papier Pixel</a></h1>
+                <h1 class="overlay-name"><a href="/../dev/spp.php">Son Papier Pixel</a></h1>
                 <p class="overlay-para">Son Papier Pixel présente le workshop et la documentation issue du projet européen Codename Seedling. </p>
                 <!--image vertical--> 
                 <img class="hero-img hero-img-vertical" src="images/dev/spp/sppv.PNG" alt="Capture d'écran du site Son Papier Pixel">
@@ -52,7 +52,7 @@
                 <img class="hero-img hero-img-horizontal" src="images/dev/spp/spp.png" alt="Capture d'écran du site Son Papier Pixel">
             </div>
             <div class="hero" data-id="3">
-                <h1 class="overlay-name"><a href="/../camille.paillou/dev/bap.php">Bap.perf</a></h1>
+                <h1 class="overlay-name"><a href="/../dev/bap.php">Bap.perf</a></h1>
                 <p class="overlay-para">BAP.PERF est un site pour archiver les performances des étudiants des Beaux-Arts de Paris</p>
                 <!--image vertical--> 
                 <img class="hero-img hero-img-vertical" src="images/dev/bapperf/bapv1.PNG" alt="Capture d'écran du site bap.perf">

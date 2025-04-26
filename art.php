@@ -73,14 +73,14 @@
         </div>
         <div class="gallery-item grid__item pos-7 vertical" data-title="Emprise" data-content="">
             <a href="oeuvre/emprise.php"><div class="gallery-item-img" style="background-image:url('images/art/emprise/1.webp');"></div></a>
-            <div class="gallery-item-info">
+            <div class="gallery-item-info vert">
                 <h3 class="gallery-item-title">Emprise</h3>
                 <span class="gallery-item-date">2024</span>
             </div>
         </div>
         <div class="gallery-item grid__item pos-8 vertical" data-title="Facette" data-content="">
             <a href="oeuvre/facette.php"><div class="gallery-item-img" style="background-image:url('images/art/facette/1.webp');"></div></a>
-            <div class="gallery-item-info">
+            <div class="gallery-item-info vert">
                 <h3 class="gallery-item-title">Facette</h3>
                 <span class="gallery-item-date">2024</span>
             </div>
@@ -108,14 +108,14 @@
         </div>
         <div class="gallery-item grid__item pos-12 vertical" data-title="Obeissance" data-content="">
             <a href="oeuvre/obeissance.php"><div class="gallery-item-img" style="background-image:url('images/art/obeissance/1.webp');"></div></a>
-            <div class="gallery-item-info">
+            <div class="gallery-item-info vert">
                 <h3 class="gallery-item-title">Obéissance</h3>
                 <span class="gallery-item-date">2024</span>
             </div>
         </div>
         <div class="gallery-item grid__item pos-13 vertical" data-title="Omerta" data-content="">
             <a href="oeuvre/omerta.php"><div class="gallery-item-img" style="background-image:url('images/art/omerta/1.webp');"></div></a>
-            <div class="gallery-item-info">
+            <div class="gallery-item-info vert">
                 <h3 class="gallery-item-title">Omerta</h3>
                 <span class="gallery-item-date">2024</span>
             </div>
@@ -135,9 +135,9 @@
             </div>
         </div>
         <div class="gallery-item grid__item pos-16" data-title="Permission" data-content="">
-            <a href="oeuvre/permission.php"><div class="gallery-item-img" style="background-image:url('images/art/rouleau/1.webp');"></div></a>
+            <a href="oeuvre/rouleau.php"><div class="gallery-item-img" style="background-image:url('images/art/rouleau/1.webp');"></div></a>
             <div class="gallery-item-info">
-                <h3 class="gallery-item-title">Permission</h3>
+                <h3 class="gallery-item-title">Permission-Sculptures</h3>
                 <span class="gallery-item-date">2025</span>
             </div>
         </div>

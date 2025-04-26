@@ -6,7 +6,7 @@
     <title>Camille Paillou </title>
     <link rel="stylesheet" href="../css/cpaillou.css"/>
     <link rel="stylesheet" href="../css/normalize.css" />
-    <script src="/../camille.paillou/js/typing3.js" defer></script>
+    <script src="/../js/typing3.js" defer></script>
 </head>
 <body>
 

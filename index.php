@@ -22,16 +22,16 @@
 
 <section class="split-screen">
         <div class="column left">
-        <div class="cp">Camille Paillou</div>
-            <img src="images/dev/hana/hv.PNG" class="slideshow-img" alt="Capture d'écran du site d'Hana Martinelli">
-            <img src="images/dev/bapperf/bapv1.PNG" class="slideshow-img" alt="Capture d'écran du site bap.perf">
-            <img src="images/dev/spp/sppv.PNG" class="slideshow-img" alt="Capture d'écran du site Son Papier Pixel">
+        <div class="cp">Camille Paillou</div> 
+            <img src="images/dev/hana/hv.PNG" class="slideshow-img" alt="Capture d'écran du site d'Hana Martinelli" loading="lazy">
+            <img src="images/dev/bapperf/bapv1.PNG" class="slideshow-img" alt="Capture d'écran du site bap.perf" loading="lazy">
+            <img src="images/dev/spp/sppv.PNG" class="slideshow-img" alt="Capture d'écran du site Son Papier Pixel" loading="lazy">
             <a href="dev.php" class="overlay-text" target="_blank">développement web</a>
         </div>
         <div class="column right">
-            <img src="images/art/echine/1.webp" class="slideshow-img" alt="Photo d'Echine">
-            <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Photo d'une exposition">
-            <img src="images/art/permission/2.webp" class="slideshow-img" alt="Photo de la performance Permission">
+            <img src="images/art/echine/1.webp" class="slideshow-img" alt="Photo d'Echine" loading="lazy">
+            <img src="images/art/accrochagebache/1.webp" class="slideshow-img" alt="Photo d'une exposition"loading="lazy">
+            <img src="images/art/permission/2.webp" class="slideshow-img" alt="Photo de la performance Permission" loading="lazy">
             <a href="art.php" class="overlay-text" target="_blank">pratique artistique</a>
         </div>
 </section>
