@@ -26,7 +26,7 @@
 
     <div class="div-cv">
     <h2 class="titre-dem">cv</h2>
-        <img class="img-cv" src="cv.png" alt="cv">
+        <img src="cv.PNG" class="img-cv" alt="cv">
         <button class="tele"><a href="cv.pdf" target="_blank">Télécharger mon cv</a></button>
     </div> 
 
